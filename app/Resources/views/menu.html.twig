@@ -1,0 +1,21 @@
+
+<nav>
+    <ul class="sf-menu fixed" id="menu">
+        {% for element_menu in site_menu %}
+            {% if((0 == element_menu[3]) and (0 == element_menu[4])) %}
+                <li><a href="{{ path(element_menu[2]) }}">{{ element_menu[1] |capitalize }}</a></li>
+            {% elseif((0 == element_menu[3]) and (1 == element_menu[4]))%}
+            <li class="dropdown">
+                <a href="{{ path(element_menu[2]) }}">{{ element_menu[1] |capitalize }}</a>
+                <ul>
+                    {% for element_sousmenu in site_menu %}
+                        {% if(element_menu[0] == element_sousmenu[3] ) %}
+                            <li><a href="{{ path(element_sousmenu[2]) }}">{{ element_sousmenu[1] |capitalize }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                </ul>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

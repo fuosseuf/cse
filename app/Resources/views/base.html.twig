@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}CSE: Bienvenue!{% endblock %}</title>
+        <meta name="description" content=" add description  ... "/>
+        {% block meta %}{% endblock %}
+
+        <!-- /// Favicons ////////  -->
+        <link rel="shortcut icon" href="favicon.png"/>
+        <!--<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />-->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+        <meta name="msapplication-TileColor" content="#1c9bdc"/>
+        <meta name="msapplication-TileImage" content="mstile.png"/>
+        <meta name="theme-color" content="#1c9bdc"/>
+
+        <!-- /// Google Fonts ////////  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600italic,600,700italic,700,800italic,800"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700"/>
+        {% block stylesheet %}
+            {% include 'css_declaration.html.twig' %} 
+        {% endblock %}
+    </head>
+    <body class="sticky-header header-style-1 footer-style-2">
+
+        <div id="wrap">
+            {% include 'header.html.twig' %} 
+            <div id="content">
+
+                <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                <!--<div class="parallax" id="page-header" style="background-image:url(content/backgrounds/1920x800-2.jpg);">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12">
+
+                                <h3>About us</h3>
+
+                                <p>Nunc tincidunt purus ante, sit amet aliquet.</p>
+
+                            </div> <!-- end .span12 -->
+                        <!--</div><!-- end .row -->
+                    <!--</div>--><!-- end .container -->
+
+                </div><!-- end #page-header -->
+            {% block body %}{% endblock %}
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        </div><!-- end #content -->
+        {% include 'footer.html.twig' %} 
+
+    </div><!-- end #wrap -->
+
+
+    <a id="back-to-top" href="#"> <i class="ifc-up4"></i> </a>
+    {% block javascripts %} {% include 'js_declaration.html.twig' %} {% endblock %}
+    </body>
+</html>

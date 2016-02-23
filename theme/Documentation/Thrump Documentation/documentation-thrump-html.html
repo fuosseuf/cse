@@ -1,0 +1,4363 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Thrump | Documentation</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+
+    <!-- Plugins CSS  -->
+    <link rel="stylesheet" href="assets/magnificpopup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/syntaxhighlighter/styles/shCore.css" />
+    <link rel="stylesheet" href="assets/syntaxhighlighter/styles/shThemeDefault.css" />
+
+	<!-- Documentation CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+	<h1><strong>Thrump</strong> by <a href="http://themeforest.net/user/bitpub/portfolio">bitpub</a></h1>
+</div>
+
+<!-- Menu -->
+<div id="doc-menu">
+
+	<ul class="nav">
+		<li class="section active"><span>1</span><a href="#s1">Introduction</a></li>
+		
+		<li class="section"><span>2</span><a href="#s2">Documentation Structure</a></li>
+		
+		<li class="section"><span>3</span><a href="#s3"> Template Structure</a></li>
+		
+		<li class="section"><span>4</span><a href="#s4"> Grid</a></li>
+		<li><span>4.1</span><a href="#s4e1">The Grid Explained</a></li>
+		<li><span>4.2</span><a href="#s4e2">Media Query(s)</a></li>
+		<li><span>4.2</span><a href="#s4e3">Grid Usage Examples</a></li>
+		<li><span>4.4</span><a href="#s4e4">Responsive utilities Classes</a></li>
+		<li><span>4.5</span><a href="#s4e5">Clearing content</a></li>
+		
+		<li class="section"><span>5</span><a href="#s5"> Element(s) CSS</a></li>
+		<li><span>5.1</span><a href="#s5e1">Fonts</a></li>
+		<li><span>5.2</span><a href="#s5e2">Icon(s) Fonts</a></li>
+		<li><span>5.3</span><a href="#s5e3">Typography</a></li>
+		<li><span>5.4</span><a href="#s5e4">Forms</a></li>
+		<li><span>5.5</span><a href="#s5e5">Helper Classes</a></li>
+		
+		<li class="section"><span>6</span><a href="#s6"> Page Layout</a></li>
+		<li><span>6.1</span><a href="#s6e1">Header</a></li>
+		<li><span>6.2</span><a href="#s6e2">Menu</a></li>
+		<li><span>6.3</span><a href="#s6e3">Mobile Menu</a></li>
+		<li><span>6.4</span><a href="#s6e4">Sticky Menu</a></li>
+        <li><span>6.5</span><a href="#s6e5">Custom Search</a></li>
+		<li><span>6.6</span><a href="#s6e6">Page Header</a></li>
+		<li><span>6.7</span><a href="#s6e7">Footer</a></li>
+		<li><span>6.8</span><a href="#s6e8">Full width sections</a></li>
+		<li><span>6.9</span><a href="#s6e9">Back to top</a></li>
+		
+		<li class="section"><span>7</span><a href="#s7"> Components</a></li>
+		<li><span>7.1</span><a href="#s7e1">Overview</a></li>
+		<li><span>7.2</span><a href="#s7e2">Sliders</a></li>
+		<li><span>7.3</span><a href="#s7e3">Animations</a></li>
+		<li><span>7.4</span><a href="#s7e4">Lightbox</a></li>
+		<li><span>7.5</span><a href="#s7e5">Filtrable Portfolio</a></li>
+        <li><span>7.6</span><a href="#s7e6">Accordions</a></li>
+        <li><span>7.7</span><a href="#s7e7">Contact form</a></li>
+        <li><span>7.8</span><a href="#s7e8">Google maps</a></li>
+        <li><span>7.9</span><a href="#s7e9">Milestones</a></li>
+        <li><span>7.10</span><a href="#s7e10">Pie charts</a></li>
+        <li><span>7.11</span><a href="#s7e11">Progress bars</a></li>
+        <li><span>7.12</span><a href="#s7e12">Tabs</a></li>
+        <li><span>7.13</span><a href="#s7e13">Countdown</a></li>
+		
+		<li class="section"><span>8</span><a href="#s8"> WordPress</a></li>
+		<li><span>8.1</span><a href="#s8e1">Posts and Comments</a></li>
+		<li><span>8.2</span><a href="#s8e2">Default Widgets</a></li>
+		<li><span>8.3</span><a href="#s8e3">Custom Widgets</a></li>
+        <li><span>8.3.1</span><a href="#s8e3e1">Twitter Feed</a></li>
+        <li><span>8.3.2</span><a href="#s8e3e2">Flickr Feed</a></li>
+        
+        <li class="section"><span>9</span><a href="#s9"> Color Schemes</a></li>
+		
+		<li class="section"><span>10</span><a href="#s10"> Tips &amp; Tricks</a></li>
+		<li><span>10.1</span><a href="#s10e1">Tutorials</a></li>
+		<li><span>10.2</span><a href="#s10e2">Using Firebug</a></li>
+		<li><span>10.3</span><a href="#s10e3">Html &amp; Css validation</a></li>
+		<li><span>10.4</span><a href="#s10e4">Page speed optimisation</a></li>
+		<li><span>10.5</span><a href="#s10e5">Seo optimisation</a></li>
+
+		<li class="section"><span>11</span><a href="#s11"> Credits</a></li>
+
+	</ul>
+</div>
+
+<!-- Content -->
+<div id="doc-content" data-spy="scroll" data-target="#menu">
+
+<!-- ===================================================================================-->
+<!-- 1 Introduction -->
+<!-- ===================================================================================-->
+        
+	<div class="intro" id="s1">
+		<div class="vertical">
+			<h1>Thrump</h1>
+			<h2>Thank you for purchasing our template.</h2>
+		</div>
+	</div>
+     
+<!-- ===================================================================================-->
+<!-- 2 Documentation Structure -->
+<!-- ===================================================================================-->
+
+    <h1 id="s2"><span>2</span>Documentation Structure</h1>
+    
+	<p>The documentation is written in a way that reflects the way the template was designed and is intended to be edited.</p>
+	
+	<p>It starts by presenting the grid that is the base of the template, then how to adapt the general page layout and 
+	the components that are used to create page content. It finishes by explaining how to change the color scheme.</p>
+	
+<!-- ===================================================================================-->
+<!-- 3 Template Structure -->
+<!-- ===================================================================================-->		
+		
+    <h1 id="s3"><span>3</span> Template Structure</h1>
+	
+		<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+		 	
+			/
+			|-- /_content				- the content that goes on the pages. each html page has it own subfolder
+			|   |
+			|	|-- /about
+			|	|-- /...
+			|	...
+			|
+			|-- /assets		
+			|   |-- /css				- template custom css stylesheets
+			|   |	|			 		 
+			|   |	|-- components.css	
+			|   |	|-- elements.css	 
+			|   |	|-- grid.css		
+			|   |	|-- layout.css		 		
+			|   |	|-- reset.css		 	 
+			|   |	|-- wordpress.css	 
+			|   |
+			|   |-- /fonts				- contains fonts / icon fonts 
+			|   |
+			|   |-- /images				- contains all the images that are used in the css stylesheets or in the html pages for layout purposes. 
+			|   |
+			|   |-- /js					- contains template custom javascript ( jQuery )
+			|   |	|
+			|   |	|-- main.js			
+			|   |
+			|   |-- /php	
+			|   |
+			|   |-- /vendors			- contains 3rd party plugins used in the template
+			|
+			|-- index.html
+			...		
+		]]></script>
+		
+		<p><strong>Template CSS</strong></p>
+		
+		<p><img src="screenshots/1.jpg"></p>
+		
+		<p>The template uses 7 main CSS stylesheets:</p>
+
+        <ul>
+            <li><strong>reset.css</strong> - a combination of <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Mayer Reset</a> and <a href="http://necolas.github.io/normalize.css/">normalize.css</a></li>
+            <li><strong>grid.css</strong> - the template grid</li>
+			<li><strong>elements.css</strong> - styling for all html5 elements</li>
+			<li><strong>layout.css</strong> - styling for the layout of the pages - header, footer, page sections etc.</li>
+			<li><strong>components.css</strong> - styling for the components that create the page content: accordion, tabs, pie charts etc.</li>
+			<li><strong>wordpress.css</strong> - styling for wordpress widgets, blog posts, standard wordpress classes. Useful if you want to convert the template to a WordPress theme</li>
+        </ul>
+		
+		<p><strong>3rd party scripts / plugins</strong></p>
+  
+		<p>The template uses a series of 3rd party plugins to add functionality.</p>	
+		
+		<p>You can find all these plugins in the <code>/assets/vendors</code> folder. </p>
+  
+		<p>The JavaScript files are added at the end of each page, just above the </body> closing tag. The Css files that the plugins may require can be found in the <head>. Doing so optimises page loading. </p>
+		
+		<p><strong>Template JavaScript</strong></p>
+		
+		<p>The template uses the jQuery JavaScript framework to interact with the user, control the browser, and alter the document content that is displayed.</p>
+
+        <p>There is one custom Js files:</p>
+			
+        <p><img src="screenshots/2.jpg"></p>
+        
+        <ul>
+            <li><strong>main.js</strong> - contains custom scripts. also used to initialize and configure 3rd party scripts / plugins.</li>
+        </ul> 
+		
+		<p></p>
+		
+<!-- ===================================================================================-->
+<!-- 4 Grid -->
+<!-- ===================================================================================-->
+		
+	<h1 id="s4"><span>4</span>Grid</h1>
+
+	<p>The template includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.</p>
+
+<!-- ===================================================================================-->
+<!--  The Grid Explained -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s4e1"><span>4.1</span> The Grid Explained</h2>
+
+	<p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the template grid system works:</p>
+	
+	<ul>
+		<li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
+		<li>Use rows to create horizontal groups of columns.</li>
+		<li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+		<li>Predefined grid classes like <code>.row</code> and <code>.span4</code> are available for quickly making grid layouts.</li>
+		<li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
+		<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.span4</code>.</li>
+		<li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
+	</ul>
+	
+	<p>Use the table below to see how aspects of the grid system work across multiple devices with a handy table.</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            Extra small devices
+            <small>Phones (&lt;768px)</small>
+          </th>
+          <th>
+            Small devices
+            <small>Tablets (≥768px)</small>
+          </th>
+          <th>
+            Medium devices
+            <small>Desktops (≥992px)</small>
+          </th>
+          <th>
+            Large devices
+            <small>Desktops (≥1200px)</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">Grid behavior</th>
+          <td>Horizontal at all times</td>
+          <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Container width</th>
+          <td>None (auto)</td>
+          <td>750px</td>
+          <td>970px</td>
+          <td>1170px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"># of columns</th>
+          <td colspan="4">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Column width</th>
+          <td class="text-muted">Auto</td>
+          <td>~62px</td>
+          <td>~81px</td>
+          <td>~97px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Gutter width</th>
+          <td colspan="4">30px (15px on each side of a column)</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Nestable</th>
+          <td colspan="4">Yes</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Offsets</th>
+          <td colspan="4">Yes</td>
+        </tr>
+      </tbody>
+    </table>
+	
+<!-- ===================================================================================-->
+<!--  -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s4e2"><span>4.2</span> Media Query(s)</h2>
+	
+	<p>We use the following media queries in our grid file to create the key breakpoints in our grid system.</p>
+	
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+	
+	/* ==========================================================================
+	   =Extra small devices: Phones (< 768px)
+	   ========================================================================== */
+
+	/* =Portrait and landscape
+	   ========================================================================== */
+	   
+		@media (max-width: 767px) {
+			
+			
+			
+		}
+		
+	/* =Landscape
+	   ========================================================================== */
+		
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			
+			
+			
+		}	
+
+	/* ==========================================================================
+	   =Small devices: Tablets (>= 768px)
+	   ========================================================================== */
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			
+			
+			
+		}
+		
+	/* ==========================================================================
+	   =Medium devices: Desktops (>= 992px )
+	   ========================================================================== */
+	   
+		@media (min-width: 992px) and (max-width: 1199px) {
+			
+			
+			
+		}	
+
+	/* ==========================================================================
+	   =Large devices: Desktops (>= 1200px )
+	   ========================================================================== */
+
+		@media (min-width: 1200px) {
+		
+			
+			
+		}
+		
+	]]></script>
+	
+<!-- ===================================================================================-->
+<!--  Grid Usage Examples -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s4e3"><span>4.3</span> Grid Usage Examples</h2>
+
+	<p><strong>Example: Basic grid</strong></p>	
+
+	<p>Using a single set of <code>.span*</code> grid classes, you can create a basic grid system that starts out 
+	stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop 
+	(medium) devices. Place grid columns in any <code>.row</code>. Rows must be placed within a <code>.container</code>. </p>
+  
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+		<div class="container">
+	
+			<div class="row">
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+				<div class="span1">.span1</div>
+			</div>
+
+			<div class="row">
+				<div class="span8">.span8</div>
+				<div class="span4">.span4</div>
+			</div>
+
+			<div class="row">
+				<div class="span4">.span4</div>
+				<div class="span4">.span4</div>
+				<div class="span4">.span4</div>
+			</div>
+
+			<div class="row">
+				<div class="span6">.span6</div>
+				<div class="span6">.span6</div>
+			</div>
+			
+		</div>
+	
+	]]></script>
+	
+	<p><strong>Example: Fluid grid </strong></p>	
+	
+	<p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+		<div class="container-fluid">
+			<div class="row">
+			...
+			</div>
+		</div>	
+	
+	]]></script>
+	
+	<p><strong>Example: Nesting columns</strong></p>	
+	
+	To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing 
+	<code>.span*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+		<div class="container">
+			<div class="row">
+				<div class="span8">
+					
+					Level 1: .span8
+					
+					<div class="row">
+						<div class="span6">
+						
+							Level 2: .span6
+							
+						</div>
+						<div class="span6">
+						
+							Level 2: .span6
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="span4">
+					
+					Level 1: .span4
+				
+				</div>
+			</div>
+		</div>	
+	
+	]]></script>
+	
+	<p><strong>Example: Offsetting columns</strong></p>		
+	
+	<p>Move columns to the right using <code>.offset*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. 
+	For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+		<div class="row">
+			<div class="span4">.span4</div>
+			<div class="span4 offset4">.span4 .offset4</div>
+		</div>
+	
+	]]></script>
+	
+<!-- ===================================================================================-->
+<!--  Responsive utilities Classes -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s4e4"><span>4.4</span> Responsive utilities Classes</h2>	
+	
+	<p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. </p>
+	<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.</p>
+	
+	
+	<p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>
+					Extra small devices <small>Phones (&lt;768px)</small>
+				</th>
+				<th>
+					Small devices <small>Tablets (≥768px)</small>
+				</th>
+				<th>
+					Medium devices <small>Desktops (≥992px)</small>
+				</th>
+				<th>
+					Large devices <small>Desktops (≥1200px)</small>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>
+					<code>.visible-phone</code>
+				</th>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<code>.visible-tablet</code>
+				</th>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<code>.visible-desktop</code>
+				</th>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<code>.visible-desktop-large</code>
+				</th>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th>
+					<code>.hidden-phone</code>
+				</th>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<code>.hidden-tablet</code>
+				</th>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<code>.hidden-desktop</code>
+				</th>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<code>.hidden-desktop-large</code>
+				</th>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-visible">
+					Visible
+				</td>
+				<td class="is-hidden">
+					Hidden
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>As of v5, the <code>.visible-*-*</code> classes for each breakpoint come in three variations, one for each CSS <code>display</code> property value listed below.</p>
+ 
+	<table class="table table-bordered table-striped">
+	  <thead>
+		<tr>
+		  <th>Group of classes</th>
+		  <th>CSS <code>display</code></th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <th scope="row"><code>.visible-*-block</code></th>
+		  <td><code>display: block;</code></td>
+		</tr>
+		<tr>
+		  <th scope="row"><code>.visible-*-inline</code></th>
+		  <td><code>display: inline;</code></td>
+		</tr>
+		<tr>
+		  <th scope="row"><code>.visible-*-inline-block</code></th>
+		  <td><code>display: inline-block;</code></td>
+		</tr>
+	  </tbody>
+	</table>
+    
+	<p>So, for phone (<code>phone</code>) screens for example, the available <code>.visible-*-*</code> classes are: <code>.visible-phone-block</code>, <code>.visible-phone-inline</code>, and <code>.visible-phone-inline-block</code>.</p>
+
+<!-- ===================================================================================-->
+<!--  Responsive utilities Classes -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s4e5"><span>4.5</span> Clearing content</h2>
+
+	<p><strong>Traditional clearing</strong></p>
+	
+	<p>Clearing CSS floats is just as important to creating CSS structures as anything could be.  For years we would clear our
+	floated elements by adding one element with the clear: both; style simple to perform the clear.</p>
+	
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+	
+	/**
+ 	 * Clear content
+	 * Usage:  <br class="clear"> 
+ 	 */	
+	 
+	.clear {
+		clear: both;
+		display: table;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+		
+	]]></script>
+
+	<p>This practice was fine but it introduced elements into the page that we really didn't need if there was a better way.</p>	
+	
+	<p><strong>Clearfix</strong></p>
+
+	<p>Today there is a better way of clearing content! A clearfix is a way for an element to automatically clear its child elements, so that you don't need to
+	add additional markup. The clearfix is a way to combat the zero-height container problem for floated elements</p>
+
+	<p>A clearfix is performed as follows:</p>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+	
+	/**
+ 	 * Clear Fix hack
+	 * Usage:  add  class="fixed"  to div's or othr elements that have floated elements in them
+ 	 */
+	 
+	.fixed:after {
+		visibility: hidden;
+		display: table;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+		
+	]]></script>	
+	
+	<p>The <code>.row</code> class used in the layout already has the clearfix applied so you don't need to add the .fixed class to elements that already have the <code>.row</code> class applied</p>
+
+<!-- ===================================================================================-->
+<!-- 5 Element(s) CSS -->
+<!-- ===================================================================================-->
+
+	<h1 id="s5"><span>5</span>Element(s) CSS</h1>
+
+<!-- ===================================================================================-->
+<!--  Fonts -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s5e1"><span>5.1</span> Fonts</h2>
+	
+		<p>The template make use of the <a href="http://www.google.com/webfonts">GOOGLE FONTS</a> service to implement non-standard fonts.</p>
+        
+        <p>Google Web Fonts is a completely free and super easy way to implement non-standard fonts on your website in a properly licensed and widely supported fashion.</p>
+        
+        <p>The fonts used are <strong><a href="http://www.google.com/fonts/specimen/Open+Sans">Open Sans</a></strong> and <strong><a href="http://www.google.com/fonts/specimen/Hind">Hind</a></strong>.</p>
+        
+         You can look it up on the google fonts website using search and then click "Quick-Use" to learn 
+         detailed info about how to use it.</p>
+         
+        <p>Quick usage tips</p> 
+        <ul>
+            <li>in the html add the link provided to the font</li>
+            <li>in the css just add the font name to your the the font or font-family css proprety of the element you want font replacement to be applied to.</li>
+        </ul>
+        
+        <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+	
+			( in html ...)	
+		
+		
+			<!-- /// Google Fonts ////////  -->
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600italic,600,700italic,700,800italic,800">
+    		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700">
+					
+					
+						
+			( in css ...)
+				
+				
+			body {
+				font: 16px "Hind", Arial, sans-serif; 
+			}
+			
+			body {
+				font-family: "Open Sans", Arial, sans-serif; 
+			}
+			
+		]]></script>
+
+
+<!-- ===================================================================================-->
+<!--  Icon(s) Fonts -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s5e2"><span>5.2</span> Icon(s) Fonts</h2>
+	
+		<p>This template uses <strong>icon fonts</strong> for delivering iconography on the website. 
+         The advantage icon fonts have over over image files ( .jpg / .png ) is that they provide scalable vector icons that
+         can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. </p>
+
+		<p>The template comes with 2  icon fonts:</p>
+        
+        <ul>
+        	<li><a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> icon font</li>
+            <li>Custom icon font</li>
+        </ul>
+        
+        <h3>How to use FontAwesome Icons</h3>
+        
+        <p>Go to the Font awesome website ( <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a>) 
+        and choose a icon and it will take you to a preview page where it provides sample code.</p>
+        
+         <script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		 <i class="fa fa-bar-chart-o"></i>
+		 ]]></script>
+        
+        <h3>How to use the Custom icon font Icons</h3>
+        
+        <p>Open the <strong>Custom icon font samples</strong> and choose a icon you like and copy it's name. </p>
+        
+        <script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		<i class="ifc-zip"></i>
+		]]></script>
+
+
+<!-- ===================================================================================-->
+<!--  Typography -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s5e3"><span>5.3</span> Typography</h2>
+	
+	<p>Typography is styled in <code>elements.css</code></p>
+	<p>You can find a preview of it and sample code source in Components > Typography</p>
+	
+<!-- ===================================================================================-->
+<!--  Forms -->
+<!-- ===================================================================================-->				
+	
+	<h2 id="s5e4"><span>5.4</span> Forms</h2>
+	
+	<p>Forms are styled in <code>elements.css</code></p>
+	<p>You can find a preview of them and sample code source in Components > Forms</p>
+	
+<!-- ===================================================================================-->
+<!--  Helper Classes -->
+<!-- ===================================================================================-->	
+		
+	
+	<h2 id="s5e5"><span>5.5</span> Helper Classes</h2>
+	
+		<p>Also there are a lot of helper classes created to help you create pages faster.</p>
+                    
+        <table class="table-bordered">
+        	<caption>Base helper classes</caption>
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>.hr</code></td>
+                    <td>creates a divider</td>
+                    <td><code>&lt;div class="hr"&gt;&lt;/div&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>.text-left</code></td>
+                    <td>text-align:left</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>.text-center</code></td>
+                    <td>text-align:center</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>.text-right</code></td>
+                    <td>text-align:right</td>
+                    <td></td>
+                </tr>
+				<tr>
+                    <td><code>.text-justify</code></td>
+                    <td>text-align:justify</td>
+                    <td></td>
+                </tr>
+				<tr>
+                    <td><code>.text-uppercase</code></td>
+                    <td>text-transform:uppercase</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>.text-highlight</code></td>
+                    <td>Highlights a section of text</td>
+                    <td>suspendisse <code>&lt;span class="text-highlight"&gt;</code>sed diam libero<code>&lt;/span&gt;</code> vel</td>
+                </tr>
+                <tr>
+                    <td><code>.mute</code></td>
+                    <td>changes color to a muted grey</td>
+                    <td>suspendisse <code>&lt;span class="mute"&gt;</code>sed diam libero<code>&lt;/span&gt;</code> vel</td>
+                </tr>
+                <tr>
+                    <td><code>.last</code></td>
+                    <td>Removes margin bottom when applied to <code>&lt;address&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;h1&gt;</code>.. <code>&lt;h6&gt;</code></td>
+                    <td><code>&lt;p class="last"&gt;</code> ....</td>
+                </tr>
+                <tr>
+                    <td><code>.no-margin-bottom</code></td>
+                    <td>Removes margin bottom when applied to elements</td>
+                    <td><code>&lt;p class="no-margin-bottom"&gt;</code> ....</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!-- ===================================================================================-->
+<!-- 6 Page Layout -->
+<!-- ===================================================================================-->
+
+	<h1 id="s6"><span>6</span>Page Layout</h1>
+
+	<p></p>
+	
+<!-- ===================================================================================-->
+<!--  Header -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e1"><span>6.1</span> Header</h2>
+	
+	<p>The template comes with the option to have the header become sticky and follow you when you scroll down the page.</p>
+	<p>To implement this feature and make it run smoothly we had to <code>position:absolute</code> the header and have a header wrapper div of fixed height around it. 
+	Because of this there are situations where you add a very big logo and it gets cut off partially. To fix this you need to find in <code>layout.css</code>:</p>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+			=Header Wrap
+			========================================================================== */
+			
+			/**
+			 * 1. The height of the #header-wrap should be increased or decreased to accommodate the logo
+			 */
+			 
+			#header-wrap {
+				position: relative;
+				height: 105px; /* 1 */
+			}
+		   
+			.header-style-1 #header-wrap {
+				position: absolute;
+				z-index: 100;
+				top: 40px;
+				left: 0;
+				right: 0;
+			}
+			
+			.header-style-1 #header-widget-area {
+				padding: 37px 0;
+				background-color: #1c9bdc;
+				color: #fff;
+				box-shadow: 0 18px 40px 0 rgba(0, 0, 0, 0.15);
+			}
+			
+			.header-style-1 #header-widget-area a { color: #fff; }
+			.header-style-1 #header-widget-area a:hover { color: #252525; }
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				.header-style-1 #header-wrap {
+					position: relative;
+					top: 0;
+				}
+				
+				.header-style-1 #header-widget-area { display: none; }
+				
+			}
+			
+			@media (max-width: 767px) {
+				
+				.header-style-1 #header-wrap {
+					position: relative;
+					top: 0;
+				}
+				
+				.header-style-1 #header-widget-area { display: none; }
+				
+			}
+		   
+		/* ==========================================================================
+		   =Header 
+		   ========================================================================== */
+		   
+			#header {
+				padding: 0 40px;
+				margin: 0 auto; 
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+						box-sizing: border-box;
+			}
+			
+			.header-style-1 #header {
+				position: relative;
+				padding: 0 20px;
+				margin-right: 15px;
+				background-color: #fff;
+				box-shadow: 0 18px 40px 0 rgba(0, 0, 0, 0.15); 
+			}
+			
+			@media (min-width: 1400px) {
+				
+				#header { padding: 0 60px; }
+				.header-style-1 #header { padding-left: 60px; }
+				
+			}
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				#header { padding: 0 20px; }
+				
+				.header-style-1 #header { 
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 100px;
+					padding-left: 40px;
+				}
+				
+			}
+			
+			@media (max-width: 767px) {
+				
+				#header { padding: 0 15px; }
+				
+				.header-style-1 #header { 
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					padding-left: 40px;
+				}
+				
+			}
+				
+	]]></script>
+	
+	<p>and increase the <strong>height</strong> until it is equal to <code>#header</code> height ( you can measure its height with the Element inspector) or you can 
+	eye ball it and increase the <strong>height</strong> until the logo seems to fit in fine.</p>
+	
+<!-- ===================================================================================-->
+<!--  Menu -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e2"><span>6.2</span>Menu</h2>
+
+	<p>The main menu is created using the <a href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish jQuery Menu plugin</a>.</p>
+	<p>The menu supports a combination of dropdown and megamenu sections.</p>
+	
+	<p>On devices with a resolution &lt;991px the menu is hidden and a mobile menu appears. The mobile menu is generated from the main
+	menu automatically using JavaScript so you don't need to worry about it. There is a trigger that toggles the mobile menu and it is hidden by default and only shown on resolutions &lt;991px.</p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<!-- // Menu // -->
+                            
+		<nav>
+			<ul class="sf-menu fixed" id="menu">
+				<li class="dropdown current">
+					<a href="index.html">Home</a>
+					<ul>
+						<li><a href="index.html">Home Business</a></li>
+						<li><a href="index-2.html">Home Creative</a></li>
+						<li><a href="index-3.html">Home Classic</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#">Features</a>
+					<ul>
+						<li><a href="revolution-slider.html">Revolution Slider</a></li>
+						<li class="dropdown">
+							<a href="#">Header</a>
+							 <ul>
+								<li><a href="header-1.html">Header 1</a></li>
+								<li><a href="header-2.html">Header 2</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Footer</a>
+							 <ul>
+								<li><a href="footer-1.html">Footer 1</a></li>
+								<li><a href="footer-2.html">Footer 2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>                                            
+				<li class="dropdown">                        	
+					<a href="#">Pages</a>
+					<ul>
+						<li><a href="about-us.html">About us</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="single-service.html">Single service</a></li>
+						<li class="dropdown">
+							<a href="#">Contact</a>
+							<ul>
+								<li><a href="contact-1.html">Contact 1</a></li>
+								<li><a href="contact-2.html">Contact 2</a></li>
+								<li><a href="contact-3.html">Contact 3</a></li>
+								<li><a href="contact-4.html">Contact 4</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Special pages</a>
+							<ul>
+								<li><a href="maintanance.html">Maintanance mode</a></li>
+								<li><a href="comming-soon.html">Comming soon</a></li>
+								<li><a href="page-404.html">404 page</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="search-results.html">Search results</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Generic pages</a>
+							<ul>
+								<li><a href="full-width-page.html">Full width</a></li>
+								<li><a href="page-right-sidebar.html">Sidebar right</a></li>
+								<li><a href="page-left-sidebar.html">Sidebar left</a></li>
+								<li><a href="blank-page.html">Blank page</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#">Portfolio</a>
+					<ul>
+						<li class="dropdown">
+							<a href="#">Portfolio grid</a>
+							<ul>                                                  
+								<li><a href="portfolio-grid-3-cols.html">3 cols</a></li>
+								<li><a href="portfolio-grid-gutter-3-cols.html">3 cols gutter</a></li>
+								<li><a href="portfolio-grid-titles-3-cols.html">3 cols titles</a></li>
+								<li><a href="portfolio-grid-gutter-titles-3-cols.html">3 cols gutter &amp; titles</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Portfolio filter</a>
+							<ul>                                                  
+								<li><a href="portfolio-filter-3-cols.html">3 cols</a></li>
+								<li><a href="portfolio-filter-gutter-3-cols.html">3 cols gutter</a></li>
+								<li><a href="portfolio-filter-titles-3-cols.html">3 cols titles</a></li>
+								<li><a href="portfolio-filter-gutter-titles-3-cols.html">3 cols gutter &amp; titles</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Portfolio fullwidth</a>
+							<ul>                                                 
+								<li><a href="portfolio-fullwidth-4-cols.html">4 cols</a></li>
+								<li><a href="portfolio-fullwidth-gutter-4-cols.html">4 cols gutter</a></li>
+								<li><a href="portfolio-fullwidth-titles-4-cols.html">4 cols titles</a></li>
+								<li><a href="portfolio-fullwidth-gutter-titles-4-cols.html">4 cols gutter &amp; titles</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Portfolio list</a>
+							<ul>                                                 
+								<li><a href="portfolio-list-1.html">Portfolio list 1</a></li>
+								<li><a href="portfolio-list-2.html">Portfolio list 2</a></li>
+								<li><a href="portfolio-list-3.html">Portfolio list 3</a></li>
+							</ul>
+						</li>
+						<li><a href="portfolio-single.html">Portfolio single</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="blog.html">Blog</a>
+					<ul>
+						<li><a href="blog.html">Blog </a></li>
+						<li><a href="blog-post.html">Blog Post</a></li>
+					</ul>
+				</li> 
+				<li>                        	
+					<a href="#">Components</a>
+					<div class="sf-mega sf-mega-4-col">
+				
+						<div class="sf-mega-section"> 
+							
+							<ul>
+								<li><a href="components-columns.html">Columns</a></li>
+								<li><a href="components-typography.html">Typography</a></li>
+								<li><a href="components-forms.html">Forms</a></li>
+								<li><a href="components-animations.html">Animations</a></li>
+								<li><a href="components-icons.html">Icons</a></li>
+								<li><a href="components-sliders.html">Sliders</a></li>
+								<li><a href="components-page-sections.html">Page sections</a></li>
+								<li><a href="components-parallax-backgrounds.html">Parallax backgrounds</a></li>
+								<li><a href="components-video-backgrounds.html">Video backgrounds</a></li>
+								<li><a href="components-accordion-toggles.html">Accordion &amp; toggles</a></li>
+								<li><a href="components-alert-messages.html">Alert messages</a></li>
+								<li><a href="components-boxes.html">Boxes</a></li>
+							</ul>
+						
+						</div><!-- end .sf-mega-section -->
+						<div class="sf-mega-section">
+							
+							<ul>
+								<li><a href="components-buttons.html">Buttons</a></li>
+								<li><a href="components-callout.html">Callout</a></li>
+								<li><a href="components-dividers.html">Dividers</a></li>
+								<li><a href="components-dropcaps.html">Dropcaps</a></li>
+								<li><a href="components-google-maps.html">Google maps</a></li>
+								<li><a href="components-headline.html">Headline</a></li>
+								<li><a href="components-icon-box.html">Icon box</a></li>
+								<li><a href="components-image-box.html">Image box</a></li>
+								<li><a href="components-image-gallery.html">Image gallery</a></li>
+								<li><a href="components-lightbox.html">Lightbox</a></li>
+								<li><a href="components-lists.html">Lists</a></li>
+								<li><a href="components-milestones.html">Milestones</a></li>
+								
+							</ul>
+						
+						</div><!-- end .sf-mega-section -->
+						<div class="sf-mega-section">    												
+							
+							<ul>
+								<li><a href="components-multimedia-content.html">Multimedia content</a></li>
+								<li><a href="components-modal-window.html">Modal window</a></li>
+								<li><a href="components-our-process.html">Our process</a></li>
+								<li><a href="components-pie-charts.html">Pie charts</a></li>
+								<li><a href="components-pricing-table.html">Pricing table</a></li>
+								<li><a href="components-progress-bars.html">Progress bars</a></li>
+								<li><a href="components-quotes-testimonials.html">Quotes &amp; testimonials</a></li>
+								<li><a href="components-social-media.html">Social media</a></li>
+								<li><a href="components-styled-tables.html">Styled tables</a></li>
+								<li><a href="components-tabs.html">Tabs</a></li>
+								<li><a href="components-team-member.html">Team member</a></li>
+								<li><a href="components-wordpress-widgets.html">WordPress widgets</a></li>
+							</ul>
+						
+						</div><!-- end .sf-mega-section -->
+						<div class="sf-mega-section hidden-phone hidden-tablet">
+							
+							<p>
+								<img src="assets/images/270x190.jpg" alt="">
+							</p>    
+							
+							<div class="sf-mega-section-title">This is a regular blog post</div>
+							
+							<p>Nulla luctus diam ex, at blandit lacus sodales ut. Aliquam ornare quis nisi sit amet suscipit. 
+							Etiam malesuada nulla.</p>
+							
+							<a href="#">Read more</a>
+						
+						</div><!-- end .sf-mega-section -->
+						
+					</div><!-- end .sf-mega -->
+				</li> 
+			</ul>
+		</nav>	
+
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Menu 
+		   ========================================================================== */
+		
+		/* =Menu Basics
+		   ========================================================================== */
+		   
+			.sf-menu,
+			.sf-menu ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			.sf-menu > li { float: left; }
+		
+			.sf-menu > li > a {
+				position: relative;
+				display: block;
+			}
+			
+			/**
+			 * 1. z-index is 1025 because the sticky menu is 1020
+			 */
+			
+			.sf-menu .sf-mega,
+			.sf-menu li.dropdown ul {
+				position: absolute;
+				z-index: 1025;		/* 1 */
+				top: 100%;
+				left: 0;
+				display: none;
+			}
+			
+			.sf-menu .sf-mega { left: 0; }
+			
+			.header-style-1 .sf-menu .sf-mega { margin-right: -5px; }
+			
+			.sf-menu li.dropdown { position: relative; }
+			
+			.sf-menu li.dropdown ul ul {
+				top: -23px;
+				left: 100%;
+			}
+			
+			.sf-menu li:hover > .sf-mega,
+			.sf-menu li.sfHover > .sf-mega,
+			.sf-menu li.dropdown:hover > ul,
+			.sf-menu li.dropdown.sfHover > ul { display: block; }
+		
+		/* =Menu Skin
+		   ========================================================================== */
+			
+			.sf-menu { float: right; } 
+			
+			.sf-menu a {
+				display: block;
+				padding: 5px 0;
+				font: 14px "Hind", sans-serif;
+				font-weight: 500;
+				color: #252525; 
+				text-decoration: none;
+			}
+			
+			.sf-menu li.dropdown a { padding: 5px 30px; }
+			
+			.sf-menu li:last-child > a { border-bottom: none; }
+			
+			.sf-menu > li > a,
+			.sf-menu > li.dropdown > a {
+				padding: 42px 15px 37px;
+				border: none;
+				color: #252525;
+				font-size: 14px;
+				line-height: 26px;
+				font-weight: 600;
+				text-transform: uppercase;	
+			}
+			
+			.sf-menu > li a i { margin-right: 5px; }
+			
+			.sf-menu > li.current > a,
+			.sf-menu li.sfHover > a,
+			.sf-menu a:hover,
+			.sf-menu li.sfHover a:hover {
+				color: #1c9bdc;
+				text-decoration: none;	
+			}
+		
+		/* =DropDown
+		   ========================================================================== */
+			
+			/**
+			 * 1. allow long menu items to determine submenu width
+			 */
+			
+			.sf-menu li.dropdown ul {
+				min-width: 200px; 	/* 1 */
+				padding: 20px 0;
+				background-color: #fff;
+				box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.21); 			
+			}
+		
+			.sf-menu > li.dropdown ul { border-top: 3px solid #1c9bdc; }	
+				
+		/* =Mega Menu Section
+		   ========================================================================== */
+			
+			.sf-mega {
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+						box-sizing: border-box;
+				padding: 20px 0;
+				border-top: 3px solid #1c9bdc;
+				background-color: #fff;
+				box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.21);
+			}
+		
+			.sf-mega-section {
+				float: left;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+						box-sizing: border-box;
+				padding: 0 20px;
+			}
+		
+			/**
+			 * 1. set mega menu section size, as a percentage of the mega menu width
+			 */
+			
+			.sf-mega.sf-mega-1-col .sf-mega-section{ width: 100%; } /* 1 */
+			
+			.sf-mega.sf-mega-2-col .sf-mega-section{ width: 50%; }
+			
+			.sf-mega.sf-mega-3-col .sf-mega-section{ width: 33.3333333333%; }
+			
+			.sf-mega.sf-mega-4-col .sf-mega-section{ width: 25%; }
+			
+			.sf-mega-section-title {
+				margin-bottom: 20px;
+				font-size: 16px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+			
+			@media (min-width: 1200px) {
+				
+				.sf-mega-section { padding: 0 40px; }
+				
+			}
+			
+		/* =Menu Arrows
+		   ========================================================================== */
+			
+			.sf-arrows .sf-with-ul:after {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				display: none;
+				width: 0;
+				height: 0;
+				border: 4px solid transparent;
+				border-top-color: #919191;
+				margin-top: -1px;
+				content: "";
+			}
+				
+			.sf-arrows > li > .sf-with-ul:focus:after,
+			.sf-arrows > li:hover > .sf-with-ul:after,
+			.sf-arrows > .sfHover > .sf-with-ul:after { border-top-color: rgba(0, 0, 0, 0.7); }
+				
+			.sf-arrows ul .sf-with-ul:after {
+				display: block;
+				border-color: transparent;
+				border-left-color: #919191;
+				margin-top: -5px;
+				margin-right: 10px;
+			}
+			
+			.sf-arrows ul li > .sf-with-ul:focus:after,
+			.sf-arrows ul li:hover > .sf-with-ul:after,
+			.sf-arrows ul .sfHover > .sf-with-ul:after { border-left-color: rgba(0, 0, 0, 0.7); }
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+		
+				#menu { display: none; }
+		
+			}
+			
+			@media (max-width: 767px) {
+		
+		
+				#menu { display: none; }
+			
+			}
+				
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+			
+		if(typeof $.fn.superfish !== 'undefined'){
+			
+			$('#menu').superfish({
+				delay: 500,
+				animation: {opacity:'show',height:'show'},
+				speed: 100,
+				cssArrows: true
+			});
+			
+		}
+			
+	]]></script>
+		
+<!-- ===================================================================================-->
+<!--  Mobile Menu -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e3"><span>6.3</span> Mobile Menu</h2>
+
+	<p>On devices with a resolution &lt;991px the menu is hidden and a mobile menu appears.</p>
+	<p>The mobile menu is generated from the main menu automatically using JavaScript so you don't need to worry about it.</p>
+	<p>There is a trigger that toggles the mobile menu and it is hidden by default and only shown on resolutions &lt;991px.</p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<!-- // Mobile menu trigger // -->
+                            
+		<a href="#" id="mobile-menu-trigger">
+			<i class="fa fa-bars"></i>
+		</a>	
+			
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Mobile Menu 
+		   ========================================================================== */
+					
+			#mobile-menu {
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 0;
+				background-color: #1c9bdc;
+				color: #fff;
+			}
+			
+			#mobile-menu li {	
+				display: block;
+				margin: 0;
+			}
+				
+			#mobile-menu > li > ul, 
+			#mobile-menu > li > ul > li > ul {
+				display: none;
+				margin-left: 0;
+			}
+			
+			#mobile-menu .sf-mega {
+				display: none;
+				padding: 0;
+				border: none;
+				margin: 0;
+				background-color: #1c9bdc;
+				box-shadow: none;
+			}
+			
+			#mobile-menu .sf-mega-section {
+				float: none;
+				width: 100%;
+				padding: 0;
+				border: none;
+			}
+			
+			#mobile-menu .sf-mega-section ul { margin: 0; }
+		
+			#mobile-menu > li > a {
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			
+			#mobile-menu li a {
+				position: relative;
+				display: block;
+				padding: 15px 25px 12px;
+				border-top: 1px solid #e1e1e1;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 500;
+				text-align: left;
+				text-decoration: none;
+			}
+			
+			#mobile-menu ul a { padding-left: 45px; }
+			
+			#mobile-menu ul li ul a  { padding-left: 65px; }
+			
+			#mobile-menu .mobile-menu-submenu-arrow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 70px;
+				height: 100%;
+				border-left: 1px solid #e1e1e1;
+				color: #fff;
+				font-size: 20px;
+				line-height: 54px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			#mobile-menu .mobile-menu-submenu-arrow:hover { 
+				background-color: #f7f7f7;
+				color: #252525;
+			}
+			
+			#mobile-menu li a:hover {}
+			
+			#mobile-menu { display: none; }
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				#mobile-menu .mobile-menu-submenu-arrow { width: 100px; }
+				
+			}
+		
+		/* ==========================================================================
+		   =Mobile menu trigger
+		   ========================================================================== */
+						
+			#mobile-menu-trigger { 
+				float: right;
+				display: none;
+				font-size: 32px;
+			}
+		
+			@media (min-width: 768px) and (max-width: 991px) {
+		
+				#mobile-menu-trigger { 
+					display: block;
+					margin-top: 37px;
+					margin-right: 0;
+				}	
+		
+			}
+		
+			@media (max-width: 767px) {
+		
+				#mobile-menu-trigger { 
+					position: absolute;
+					top: 28px;
+					right: 5px;
+					display: block;
+					padding: 10px;
+					margin-top: 0;
+				}
+		
+			}
+		
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+				#mobile-menu-trigger {}
+			
+			}
+								
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+			
+		/* ==========================================================================
+		   handleMobileMenu 
+		   ========================================================================== */		
+		
+			var MOBILEBREAKPOINT = 991;
+		
+			function handleMobileMenu() {
+		
+				if ($(window).width() > MOBILEBREAKPOINT) {
+					
+					$("#mobile-menu").hide();
+					$("#mobile-menu-trigger").removeClass("mobile-menu-opened").addClass("mobile-menu-closed");
+				
+				} else {
+					
+					if (!exists("#mobile-menu")) {
+						
+						$("#menu").clone().attr({
+							id: "mobile-menu",
+							"class": "fixed"
+						}).insertAfter("#header");
+						
+						$("#mobile-menu > li > a, #mobile-menu > li > ul > li > a").each(function() {
+							var $t = $(this);
+							if ($t.next().hasClass('sub-menu') || $t.next().is('ul') || $t.next().is('.sf-mega')) {
+								$t.append('<span class="fa fa-angle-down mobile-menu-submenu-arrow mobile-menu-submenu-closed"></span>');
+							}
+						});
+					
+						$(".mobile-menu-submenu-arrow").on("click", function(event) {
+							var $t = $(this);
+							if ($t.hasClass("mobile-menu-submenu-closed")) {
+								$t.removeClass("mobile-menu-submenu-closed fa-angle-down").addClass("mobile-menu-submenu-opened fa-angle-up").parent().siblings("ul, .sf-mega").slideDown(300);
+							} else {
+								$t.removeClass("mobile-menu-submenu-opened fa-angle-up").addClass("mobile-menu-submenu-closed fa-angle-down").parent().siblings("ul, .sf-mega").slideUp(300);
+							}
+							event.preventDefault();
+						});
+						
+						$("#mobile-menu li, #mobile-menu li a, #mobile-menu ul").attr("style", "");
+						
+					}
+					
+				}
+		
+			}
+		
+		/* ==========================================================================
+		   showHideMobileMenu
+		   ========================================================================== */
+		
+			function showHideMobileMenu() {
+				
+				$("#mobile-menu-trigger").on("click", function(event) {
+					
+					var $t = $(this),
+						$n = $("#mobile-menu");
+					
+					if ($t.hasClass("mobile-menu-opened")) {
+						$t.removeClass("mobile-menu-opened").addClass("mobile-menu-closed");
+						$n.slideUp(300);
+					} else {
+						$t.removeClass("mobile-menu-closed").addClass("mobile-menu-opened");
+						$n.slideDown(300);
+					}
+					event.preventDefault();
+					
+				});
+				
+			}
+			
+		/* ==========================================================================
+		   When document is ready, do
+		   ========================================================================== */
+			 
+			$(document).ready(function() {             
+				  
+				...
+				  
+				handleMobileMenu();
+				showHideMobileMenu();
+				  
+				...
+				  
+			});
+		  
+		/* ==========================================================================
+		   When the window is resized, do
+		   ========================================================================== */
+			 
+			$(window).resize(function() {
+				  
+				...
+				  
+				handleMobileMenu();
+				  
+				...
+				  
+			});
+			
+	]]></script>
+	
+<!-- ===================================================================================-->
+<!--  Sticky Menu -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e4"><span>6.4</span> Sticky Menu</h2>
+	
+	<p>The template comes with the option to have the header become sticky and follow you when you scroll down the page.</p>
+	<p>The sticky menu is control by a class - <code>.sticky-header</code> -  applied to the <code>body</code> element</p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<body class="sticky-header">	
+			
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Sticky Header
+		   ========================================================================== */
+		
+			@media (min-width: 1025px) {
+		
+				#header {
+					position: absolute;
+					top: 0; 					
+					right: 0;
+					left: 0;
+					margin: 0 auto;
+				}
+				
+				/**
+				 * 1. The z-index has to be 1020 so it is bigger than the back to top buttons z-index that is 1010
+				 */
+				
+				#header-wrap.stuck {
+					position: fixed;
+					z-index: 1020; /* 1 */
+					top: 0;
+					width: 100%;
+					padding-top: 15px;
+					background-color: #fff;
+					box-shadow: 0 18px 40px 0 rgba(0, 0, 0, 0.13);	
+					-webkit-transition: padding-top 0.5s;
+							transition: padding-top 0.5s;
+				}
+				
+				.header-style-1 #header-wrap.stuck { 
+					padding-top: 0;
+					background-color: #1c9bdc;
+					-webkit-transition: background-color 0.3s;
+							transition: background-color 0.3s; 
+				}
+				
+				.header-style-1 #header-wrap.stuck #header, 
+				.header-style-1 #custom-search-button, 
+				.header-style-1 #header-widget-area { box-shadow: none; }
+				
+				.header-style-2 #header-wrap.stuck #header { top: 15px; }
+				
+				.header-style-2 #header-wrap.stuck { height: 90px; }
+				
+				.header-style-2 #header-wrap.stuck #logo { padding-top: 25px; }
+				
+				.header-style-2 #header-wrap.stuck .sf-menu > li > a,
+				.header-style-2 #header-wrap.stuck .sf-menu > li.dropdown > a { padding-top: 27px; }
+				
+				.header-style-2 #header-wrap.stuck .sf-arrows .sf-with-ul:after { margin-top: -7px; }
+				.header-style-2 #header-wrap.stuck .sf-arrows ul .sf-with-ul:after { margin-top: -5px; }
+				
+				.header-style-2 #header-wrap.stuck #custom-search-button { top: 28px; }
+						
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+			
+		/* ==========================================================================
+		   handleStickyHeader
+		   ========================================================================== */	 
+		   
+			var stickyHeader = false;
+			var stickypoint = 500;
+			
+			if ($('body').hasClass('sticky-header')){
+				stickyHeader = true;
+			}
+			
+			stickypoint = $("#header-top").outerHeight() + $("#header-wrap").outerHeight() + 150;
+			
+			function handleStickyHeader() {
+			
+				var b = document.documentElement,
+					e = false;
+		
+				function f() {
+					
+					window.addEventListener("scroll", function (h) {
+						
+						if (!e) {
+							e = true;
+							setTimeout(d, 250);
+						}
+					}, false);
+					
+					window.addEventListener("load", function (h) {
+						
+						if (!e) {
+							e = true;
+							setTimeout(d, 250);
+						}
+					}, false);
+				}
+			
+				function d() {
+					
+					var h = c();
+					
+					if (h >= stickypoint) {
+						$('#header').addClass("stuck");
+					} else {
+						$('#header').removeClass("stuck");
+					}
+					
+					e = false;
+				}
+			
+				function c() {
+					
+					return window.pageYOffset || b.scrollTop;
+					
+				}
+				
+				f();
+				
+			}	
+
+			
+		/* ==========================================================================
+		   When document is ready, do
+		   ========================================================================== */
+			 
+			$(document).ready(function() {             
+				  
+				...
+				  
+				if(stickyHeader && ($(window).width() > 1024)){ 
+					handleStickyHeader();
+				}
+				  
+				...
+				  
+			});
+		  
+		/* ==========================================================================
+		   When the window is scrolled, do
+		   ========================================================================== */
+			 
+			$(window).scroll(function() {                  
+				  
+				...
+		  
+				if(stickyHeader && ($(window).width() > 1024)){ 
+					handleStickyHeader();
+				}
+				  
+				...
+				  
+			});
+		  
+		/* ==========================================================================
+		   When the window is resized, do
+		   ========================================================================== */
+			 
+			$(window).resize(function() {
+				  
+				...
+				  
+				if(stickyHeader && ($(window).width() > 1024)){ 
+					handleStickyHeader();
+				}
+				  
+				...
+				  
+			});
+			
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Sticky Menu -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e5"><span>6.5</span> Custom Search</h2>
+    
+    <script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<!-- // Custom search // -->                                        
+                                    
+		<div id="custom-search-form-container">
+		
+			<form action="#" id="custom-search-form" method="get">
+				<input type="text" value="" name="s" id="s" placeholder="Type and press enter to search...">
+				<input type="submit" id="custom-search-submit" value="">
+			</form>
+			
+		</div><!-- end #custom-search-form-container -->
+
+		<a id="custom-search-button" href="#"></a>
+			
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Custom search form 
+		   ========================================================================== */
+			
+			#custom-search-button + nav { margin-right: 60px; }
+	
+			#custom-search-button { 
+				position: absolute;
+				top: 43px;
+				right: 15px;
+				display: block;
+				width: 16px;
+				height: 18px;
+				background: url(../images/bg-search.png) no-repeat center center;
+			}
+			
+			.header-style-1 #custom-search-button {
+				position: relative;
+				top: 0; 
+				display: block;
+				width: 100%;
+				height: 105px;
+				background: #1c9bdc url(../images/bg-search-2.png) no-repeat center center;
+				box-shadow: 0 18px 40px 0 rgba(0, 0, 0, 0.15);
+			}
+			
+			#custom-search-form-container {
+				position: fixed;
+				z-index: -1;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				padding: 30px 0 20px 0;
+				text-align: center;
+				background-color: #1c9bdc;
+				opacity: 0;
+				-webkit-transform: rotateY(90deg);
+					-ms-transform: rotateY(90deg);
+						transform: rotateY(90deg);
+				-webkit-transition: all 0.4s;
+						transition: all 0.4s;
+			}
+			
+			/**
+			 * 1. z-index is 1030 because the menu has a z-index of 1025 
+			 */
+			 
+			#custom-search-form {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+						transform: translateY(-50%);
+			}
+			
+			#custom-search-form-container.open-custom-search-form {
+				z-index: 9999;
+				right: 0;
+				opacity: 1;
+				-webkit-transform: rotateY(0);
+					-ms-transform: rotateY(0);
+						transform: rotateY(0);
+			}
+			
+			#custom-search-form #s {
+				display: inline-block;
+				width: 50%;
+				height: 50px;
+				padding: 12px 50px 8px 20px;
+				margin: 0 auto;
+				border-color: #fff;
+				background-color: #fff;
+			}
+			
+			#custom-search-submit {
+				display: inline-block;
+				border: none;
+				padding: 8px;
+				margin-left: -40px;
+				margin-bottom: 0;
+				vertical-align: middle;
+				background: url(../images/bg-search.png) no-repeat center center;
+			}
+			
+			#custom-search-form-container a.custom-search-form-close {
+				position: absolute;
+				top: 50px;
+				right: 50px;
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 32px;
+				border-radius: 50%;
+				border: 2px solid #fff;
+				color: #fff;
+				text-decoration: none;
+				-webkit-transition: all 0.3s;
+						transition: all 0.3s;
+			}
+			
+			#custom-search-form-container a.custom-search-form-close:hover {
+				border-color: #252525;
+				background-color: #252525; 
+			}
+			
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+		
+				#custom-search-button { right: 65px; }
+				#custom-search-form { right: 55px; }
+				
+				.header-style-1 #custom-search-button {
+					position: absolute;
+					top: 0;
+					right: 15px;
+					width: 100px;
+				}
+				
+			}
+			
+			@media (max-width: 767px) {
+		
+				/**
+				 * Hide search on mobile
+				 */
+				 
+				/**
+				 * 1. !important is needed to overwrite the display:block added by the js
+				 */ 
+			
+				#custom-search-form { 
+					display: none !important; /* 1 */
+				}
+				
+				#custom-search-button { display: none !important; }
+				
+			}
+
+	
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+			
+		/* ==========================================================================
+		   handleSearch
+		   ========================================================================== */
+		   
+			function handleSearch() {	
+		
+				$("#custom-search-button").on("click", function(e) { 
+			
+					e.preventDefault();
+					
+					if(!$("#custom-search-button").hasClass("open")) {
+					
+						$("#custom-search-form-container").addClass("open-custom-search-form");
+						
+					} else {
+						
+						$("#custom-search-form-container").removeClass("open-custom-search-form");
+					
+					}
+					
+					$(window).resize(function(){
+						$("#custom-search-form-container").removeClass("open-custom-search-form");
+					})
+					
+				});
+				
+				$("#custom-search-form").after('<a class="custom-search-form-close" href="#">x</a>');
+				
+				$("#custom-search-form-container a.custom-search-form-close").on("click", function(event){
+					
+					event.preventDefault();
+					$("#custom-search-form-container").removeClass("open-custom-search-form");
+					
+				});
+				
+			 }
+					
+		/* ==========================================================================
+		   When document is ready, do
+		   ========================================================================== */
+			 
+			$(document).ready(function() {             
+				  
+				...
+				  
+				handleSearch();
+				  
+				...
+				  
+			});
+			
+	]]></script>
+
+<!-- ===================================================================================-->
+<!--  Page Header -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e6"><span>6.6</span> Page Header</h2>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="parallax" id="page-header" style="background-image:url(content/backgrounds/1920x800-1.jpg);">
+				
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+
+						<h3>Header 1</h3>
+						
+						<p>Nunc tincidunt purus ante, sit amet aliquet.</p>
+					
+					</div><!-- end .span12 -->
+				</div><!-- end .row -->
+			</div><!-- end .container -->
+			
+		</div><!-- end #page-header -->
+			
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Page Header
+		   ========================================================================== */
+			
+			#page-header { 
+				padding: 100px 0;
+				margin-bottom: 100px;
+				background: #252525 no-repeat center center;
+				color: #fff;
+				text-align: center;
+			}
+			
+			.header-style-1 #page-header { padding-top: 250px; }
+			
+			#page-header p {
+				margin-bottom: 0;
+				color: #1c9bdc; 
+			}
+			
+			#page-header h3 { margin-bottom: 0; }
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				.header-style-1 #page-header { padding-top: 100px; }
+				
+			}
+			
+			@media (max-width: 767px) {
+				
+				.header-style-1 #page-header { padding-top: 100px; }
+				
+			}
+				
+	]]></script>
+	
+<!-- ===================================================================================-->
+<!--  Footer -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e7"><span>6.7</span> Footer</h2>
+	
+	<p>One of my goals when developing a html template is to also make it super easy to convert to WordPress.</p>
+	<p>For this reason I decide to consider the header and footer sections widgetable areas like WordPress does. 
+	I also styled all the default WordPress widgets and created some custom, all while keeping the WordPress code and classes.</p>
+	<p>Look in Components > Widgets for the list of widgets you can use in these areas.</p>
+	
+<!-- ===================================================================================-->
+<!--  Full width sections -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e8"><span>6.8</span> Full width sections</h2>
+
+	<p>The template design has some sections that span from one corner to the other and which have custom background colors or images. We call these full width sections.</p>
+	
+	<p>The full width sections background can be a color, a image ( which can have a parallax effect applied) or a video.</p>
+	<p>Inside a full width section row and columns are still used to align content to grid.</p>
+	
+	<p>The template supports 3 types of parallax effects for full width sections with image backgrounds: vertical parallax (standard these days), horizontal parallax and animated horizontal parallax.</p>
+		
+	<p><strong>Full width with background color</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section">
+			<div class="fullwidth-section-content">
+				
+				<h1 class="text-center">Full width section with background color.</h1>
+			
+			</div><!-- end .fullwidth-section-content -->
+		</div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with background color + overlay</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section" style="background-image:url(content/temp/fullwidth-sections/bg4.jpg);">
+			<div class="fullwidth-section-content">
+					
+				<h1 class="text-center">Full width section with background image + overlay.</h1>
+				
+			</div><!-- end .fullwidth-section-content -->
+			<div class="fullwidth-section-overlay" style="background-image:url(content/temp/fullwidth-sections/overlay-pattern.png);"></div>	
+		</div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with background image</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section" style="background-image:url(content/temp/fullwidth-sections/bg4.jpg);">
+			<div class="fullwidth-section-content">
+				
+				<h1 class="text-center">Full width section with background image.</h1>
+			
+			</div><!-- end .fullwidth-section-content -->
+		</div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with background image - parallax vertical</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section parallax" style="background-image:url(content/temp/fullwidth-sections/bg2.jpg); padding:80px 0;">
+			<div class="fullwidth-section-content">
+					
+					<h1 class="text-center">Full width section with background image and parallax.</h1>
+				
+			</div><!-- end .fullwidth-section-content -->
+        </div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with background image - parallax horizontal</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section horizontal-parallax" data-parallax_sense="100" style="background-image:url(content/temp/fullwidth-sections/bg6.png); padding:80px 0;">
+			<div class="fullwidth-section-content">
+					
+					<h1 class="text-center">Full width section with background image and horizontal parallax.</h1>
+				
+			</div><!-- end .fullwidth-section-content -->
+        </div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with background image - parallax horizontal animated</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section animated-parallax" data-bg-animation-type="horizontal" data-animation-repeat="x" data-parallax_sense="75" style="background-image:url(content/temp/fullwidth-sections/bg6.png); padding:80px 0;">
+			<div class="fullwidth-section-content">
+					
+				<h1 class="text-center">Full width section with background image and animated parallax.</h1>
+			
+			</div><!-- end .fullwidth-section-content -->
+		</div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with video background - local video</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<div class="fullwidth-section parallax" style="background-color: #245dc1; min-height: 540px;">   
+			<div class="fullwidth-section-content">
+				
+				<h1 class="text-center">Local video source.</h1>
+			
+			</div><!-- end .fullwidth-section-content -->
+		   
+			<div class="fullwidth-section-video">
+				
+				<video autoplay loop poster="content/temp/video/video-fallback.png" preload="auto">
+					<source src="content/temp/video/video-sample.mp4" type="video/mp4">
+					<source src="content/temp/video/video-sample.webm" type="video/webm">
+					<source src="content/temp/video/video-sample.ogv" type="video/ogg">
+				</video>
+				
+			</div>	
+		</div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+	<p><strong>Full width with video background - youtube video</strong></p>
+	
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<a id="bgndVideo" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=qGsTlYLbwy4',containment:'#bg-video-youtube',showControls:true,autoPlay:false, mute:true, startAt:0, opacity:1}">My video</a>
+		<div class="fullwidth-section parallax" style="background-color: #245dc1; min-height:540px;">
+			<div class="fullwidth-section-content">
+				
+				<h1 class="text-center">Youtube video source.</h1>
+			
+			</div><!-- end .fullwidth-section-content -->
+			<div class="fullwidth-section-video" id="bg-video-youtube" ></div>
+		</div><!-- end .fullwidth-section -->	
+			
+	]]></script>
+	
+<!-- ===================================================================================-->
+<!--  Back to top -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s6e9"><span>6.9</span> Back to top</h2>
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[ 
+		
+		<a id="back-to-top" href="#">
+			<i class="ifc-up4"></i>
+		</a>	
+			
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Back to top
+		   ========================================================================== */
+		
+			#back-to-top {
+				position: fixed;
+				z-index: 1010;
+				right: -40px;
+				bottom: 20px;
+				width: 40px;
+				height: 40px;
+				background-color: #252525;
+				color: #fafafa;
+				font-size: 30px;
+				text-align: center;					
+				opacity: 0.5;
+				cursor: pointer;
+				text-decoration: none;
+				-webkit-transition: all 0.4s ease 0s;
+						transition: all 0.4s ease 0s;
+			}
+			
+			#back-to-top i {
+				font-size: 24px;
+				line-height: 40px;
+				font-weight: normal;
+				vertical-align: top;
+				-webkit-transition: all 0.4s ease 0s;
+						transition: all 0.4s ease 0s;
+			}
+			
+			#back-to-top:hover { background-color: rgba(0, 0, 0, 0.7); }
+			#back-to-top:hover i { color: #fff; }
+			#back-to-top.visible { right: 40px; }
+			#back-to-top.gone { right: -40px; }	
+
+
+										
+	]]></script>
+
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+			
+		/* ==========================================================================
+		   handleBackToTop
+		   ========================================================================== */
+		   
+		   function handleBackToTop() {
+			   
+				$('#back-to-top').on("click", function(){
+					$('html, body').animate({scrollTop:0}, 'slow');
+					return false;
+				});
+		   
+		   }
+			
+		/* ==========================================================================
+		   showHidebackToTop
+		   ========================================================================== */	
+			
+			function showHidebackToTop() {
+			
+				if ($(window).scrollTop() > $(window).height() / 2 ) {
+					$("#back-to-top").removeClass('gone').addClass('visible');
+				} else {
+					$("#back-to-top").removeClass('visible').addClass('gone');
+				}
+			
+			}
+			
+		/* ==========================================================================
+		   When document is ready, do
+		   ========================================================================== */
+			 
+			$(document).ready(function() {             
+				  
+				...
+				  
+				handleBackToTop();
+				showHidebackToTop();
+				  
+				...
+				  
+			});
+		  
+		/* ==========================================================================
+		   When the window is scrolled, do
+		   ========================================================================== */
+			 
+			$(window).scroll(function() {                  
+				  
+				...
+				  
+				showHidebackToTop();
+				  
+				....
+				  
+		  
+			});
+			
+	]]></script>
+	
+<!-- ===================================================================================-->
+<!-- 7 Components -->
+<!-- ===================================================================================-->
+
+	<h1 id="s7"><span>7</span>Components</h1>
+
+<!-- ===================================================================================-->
+<!--  Overview -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s7e1"><span>7.1</span> Overview</h2>
+
+<!-- ===================================================================================-->
+<!--  Sliders -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e2"><span>7.2</span> Sliders</h2>
+	
+		<p>Revolution slider has it's own documentation folder.</p>
+	
+		<p>The template uses bxSlider for general sliders and carousels.</p>
+		
+        <p>The documentation for the slider can be found <a href="http://bxslider.com/">here</a>.</p>
+
+<!-- ===================================================================================-->
+<!--  Animations -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s7e3"><span>7.3</span> Animations</h2>
+	
+		<p>To make animations possible we use: CSS 3 animations - <a href="#">http://daneden.github.io/animate.css/</a>. Refer to the scripts website for a complete list of available animation types.</p>
+      
+		<p>To animate an element on a page just add the <code>.animate</code> class to it.</p> 
+		
+		<p>The animation delay, style, speed etc. can be configured through data attributes:</p>
+		<ul>
+			<li><code>data-animation</code> - should be one of the animation names from <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>.</li>
+			<li><code>data-animation-delay</code> - should be a numeric value in miliseconds</li>
+			<li><code>data-animation-speed</code> - should be a numeric value in miliseconds</li>
+		</ul>	
+		
+		<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+			<div class="span3 animate" data-animation="fadeIn" data-animation-delay="900" data-animation-speed="3000" >
+			...
+	
+		]]></script>
+
+<!-- ===================================================================================-->
+<!-- Lightbox -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s7e4"><span>7.4</span> Lightbox</h2>
+
+		<p>The template uses the <a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a> lightbox plugin.</p>
+		
+        <p>If you want to get a link to open in the lightbox just add the <code>.magnificPopup</code>
+		class to it for a single image lightbox or <code>.magnificPopup-gallery</code> for a lightbox
+		in which you can go through the pictures in a gallery fashion.</p>
+		
+		<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+			<p>
+				<a class="magnificPopup" href="1.jpg">
+					<img src="1_thumb.jpg" alt="">
+				</a>
+			</p>
+			
+			<p>
+				<a class="magnificPopup-gallery" href="1.jpg">
+					<img src="1_thumb.jpg" alt="">
+				</a>
+				<a class="magnificPopup-gallery" href="2.jpg">
+					<img src="2_thumb.jpg" alt="">
+				</a>
+				<a  class="magnificPopup-gallery" href="3.jpg">
+					<img src="3_thumb.jpg" height="75" alt="">
+				</a>
+			</p>
+	
+		]]></script>
+
+<!-- ===================================================================================-->
+<!--  Filtrable Portfolio -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e5"><span>7.5</span> Filtrable Portfolio</h2>	
+	
+	<p>The filtering on the portfolio is done with <a href="http://isotope.metafizzy.co/">Isotope 2</a>.</p>
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+		<div class="portfolio-filter">
+                    
+			<ul>
+				<li>
+					<a class="active" href="#" data-filter="*">All</a>
+				</li>
+				<li>
+					<a href="#" data-filter=".term-1">Photography</a>
+				</li>
+				<li>
+					<a href="#" data-filter=".term-2">Web design</a>
+				</li>
+				<li>
+					<a href="#" data-filter=".term-3">Brand identity</a>
+				</li>
+			</ul>
+			
+		</div><!-- end .portfolio-filter -->
+		
+		<div class="portfolio-grid three-cols portfolio-isotope">
+                        	
+			<div class="item term-2">
+				
+				<div class="portfolio-item">
+			
+					<div class="portfolio-item-preview">
+						
+						<img src="content/portfolio/380x380-1.jpg" alt="">
+						
+						<div class="portfolio-item-overlay">                                	                                    
+							
+							<div class="portfolio-item-description">
+								
+								<h3>
+									<a href="portfolio-single.html">Client Identity</a>
+								</h3>
+								
+								<h6>Design</h6>
+								
+							</div><!-- end .portfolio-item-description -->
+							
+							<div class="portfolio-item-overlay-actions">
+								
+								<a class="portfolio-item-zoom magnificPopup-gallery" href="content/portfolio/380x380-1.jpg">+</a>
+								
+							</div><!-- end .portfolio-item-overlay-actions -->
+							
+						</div><!-- end .portfolio-item-overlay -->
+						
+					</div><!-- end .portfolio-item-preview -->
+					
+				</div><!-- end .portfolio-item -->
+				
+			</div><!-- end .item -->
+
+			...
+
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+				
+		// Isotope - portfolio filtering
+		// http://isotope.metafizzy.co/beta/
+			
+		if ((typeof $.fn.isotope !== 'undefined') && (typeof $.fn.imagesLoaded !== 'undefined') && ($('.portfolio-isotope').length > 0)) {
+			
+			// initialize isotope after images are loaded
+			
+			$('.portfolio-isotope').imagesLoaded( function() {
+			
+				var container = $('.portfolio-isotope');
+					
+				container.isotope({
+					itemSelector: '.item',
+					layoutMode: 'masonry',
+					transitionDuration: '0.5s'
+				});
+		
+				$('.portfolio-filter li a').on("click", function () {
+					$('.portfolio-filter li a').removeClass('active');
+					$(this).addClass('active');
+		
+					var selector = $(this).attr('data-filter');
+					container.isotope({
+						filter: selector
+					});
+		
+					return false;
+				});
+		
+				$(window).resize(function () {
+		
+					container.isotope({ });
+				
+				});
+				
+			});
+			
+			// Load More
+			
+			var portfolio_track_click = 0,
+				portfolio_offset = 0,
+				portfolio_items_loaded = 4;
+		
+			$('.load-more').on("click", function(event) {
+				
+				event.preventDefault();
+				
+				$.ajax({					
+					type: "POST",
+					url: $(this).attr("data-file"),
+					dataType: "html",
+					cache: false,
+					msg : '',
+					success: function(data){
+						var items  = $(data).filter('.item'),
+							length = items.length,
+							html   = '';
+						if( length > 0 ){
+
+							if( portfolio_offset !== length ){
+
+								for( var i = 0; portfolio_offset < length && i < portfolio_items_loaded; portfolio_offset++, i++ ){
+									html += items.eq( portfolio_offset ).prop('outerHTML');
+								}
+
+								$('.portfolio-isotope').append(html);
+
+								$('.portfolio-isotope').imagesLoaded( function() {
+
+									$(window).trigger( 'resize' );
+									$('.portfolio-isotope').isotope('reloadItems').isotope();
+
+								});
+								if( length <= portfolio_items_loaded || portfolio_offset == length ){
+									$('.load-more').text('No more Posts to show').css({"cursor":"default"});
+								}
+
+								$('.magnificPopup-gallery').magnificPopup({
+									disableOn: 400,
+									type: 'image',
+									gallery: {
+										enabled: true
+									}
+								});	
+								
+							} else {
+								$('.load-more').text('No more Posts to show').css({"cursor":"default"});
+							}
+
+						} else {
+							$('.load-more').text('No more Posts to show').css({"cursor":"default"});
+						}
+
+					}					
+				});
+				
+			});
+	
+		}
+	
+	]]></script>
+
+	<p>To add a new filtering options just:</p>
+	
+	<ol> 
+		<li>add an &lt;a&gt; in the <strong class="highlight">ul inside .portfolio-filter</strong> and make sure to set it's <strong class="highlight">data-filter</strong> data attribute</li>
+		<li>in <strong class="highlight">ul.portfolio-grid </strong> add another &lt;li&gt; and give it a class that matches the data-filter you set previously.</li>        
+	</ol>
+    
+    <h3>Portfolio layout options:</h3>
+		
+    <p>Add class: </p>
+    <ul>
+    	<li><code>.gutter</code> - for space between columns</li>
+        <li><code>.three-cols</code> - for portfolio with 3 columns</li>
+        <li><code>.four-cols</code> - for portfolio with 4 columns</li>
+    </ul>
+    
+    <h3>Load more</h3>
+    
+    <p>More projects are loaded on page from another page.</p>
+    
+    <ul>
+        <li><code>data-file</code> - the file from which are loaded the projects via ajax</li>
+        <li><code>portfolio_items_loaded</code> - number of projects loaded at one click</li>
+    </ul>
+    
+    <script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+
+		<a class="btn load-more" href="#" data-file="portfolio-load-more-1.html">Load more</a>
+
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Accordions -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e6"><span>7.6</span> Accordions</h2>	
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div class="accordion">
+                                
+			<a class="accordion-item" href="#"> Accordion Item 1</a>
+
+			<div class="accordion-item-content">
+				
+				<p>Nam sit amet efficitur lorem. Proin porttitor varius ligula sed aliquet. 
+				Donec volutpat non enim convallis accumsan. Maecenas bibendum tempus pulvinar. 
+				Cras finibus varius nulla vel aliquet. Donec porta imperdiet semper. Donec 
+				commodo interdum fringilla bibendum.</p>
+				
+			</div><!-- end .accordion-item-content -->
+
+			<a class="accordion-item" href="#"> Accordion Item 2</a>
+
+			<div class="accordion-item-content">
+				
+				<p>Pellentesque dapibus tristique ornare. Quisque vitanimate viverra lorem. 
+				animatenean luctus lorem mi, et lobortis turpis porttitor ut. Donec dictum 
+				dolor varius metus pellentesque, quis elementum massa varius. Vestibulum 
+				semper lectus in turpis posuere sollicitudin.</p>
+				
+			</div><!-- end .accordion-item-content -->
+			
+			<a class="accordion-item" href="#"> Accordion Item 3</a>
+
+			<div class="accordion-item-content">
+				
+				<p>Curabitur suscipit lorem vitae neque convallis hendrerit. Mauris a diam 
+				quis libero viverra consequat eget vitae nulla. Fusce tincidunt gravida orci 
+				gravida porta. Ut sagittis pulvinar risus, sit amet tempor orci pulvinar nec. 
+				Aenean accumsan nulla ante, non dignissim sapien.</p>
+				
+			</div><!-- end .accordion-item-content -->
+			
+		</div><!-- end .accordion -->
+
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* =Accordion
+	   ========================================================================== */
+		
+		.accordion { margin-bottom: 30px; }
+
+		.accordion-item {
+			position: relative;
+			display: block;
+			padding: 12px 60px 12px 30px;
+			border-radius: 30px;
+			margin-bottom: 20px;
+			background-color: #e4edf1;
+			color: #252525;
+			font-family: "Open Sans", sans-serif;
+			font-size: 14px;
+			font-weight: 600;
+			-webkit-transition: all 0.3s;
+					transition: all 0.3s;
+		}
+		
+		a.accordion-item { color: #252525; }
+		
+		.accordion-item:after {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			display: block;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background-color: #fff;
+			color: #252525;
+			line-height: 42px;
+			text-align: center;
+			content: "+";
+		}
+		
+		.accordion-item.active:after { content: "-"; }
+		
+		.accordion-item:hover,
+		.accordion-item.active {
+			background-color: #1c9bdc;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.accordion-item-content { 
+			display: none; 
+			padding: 15px 60px 35px 0; 
+		}
+		
+		.accordion-item-content *:last-child { margin-bottom: 0; }
+		
+		/*
+		 * 1. Clearfix hack 
+		 */
+		 
+		.accordion-item-content:after { /* 1 */
+			visibility: hidden;
+			display: block;
+			height: 0;
+			font-size: 0;
+			content: " ";
+			clear: both;
+		}
+		
+		@media (min-width: 768px) and (max-width: 991px) {
+		
+			.accordion-item-content .alignleft { float: none; }
+		
+		}
+	
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		/* ==========================================================================
+		   handleAccordionsAndToogles
+		   ========================================================================== */
+		   
+		   function handleAccordionsAndToogles() {
+			   
+				// accordion
+				
+				$(".accordion .accordion-item").on("click", function(e) {
+					e.preventDefault();
+					if($(this).next("div").is(":visible")){
+						$(this).removeClass('active').next("div").slideUp("slow");
+					} else {
+						$('.accordion .accordion-item').removeClass('active');
+						$(".accordion .accordion-item-content").slideUp("slow");
+						$(this).addClass('active').next("div").slideToggle("slow");
+					}
+				});
+				
+				$(".accordion .accordion-item:eq(0)").trigger('click').addClass('active');
+				
+				// toggle
+				
+				$(".toggle .toggle-item").on("click", function(e) {
+					e.preventDefault();
+					$(this).toggleClass('active').next("div").slideToggle("slow");
+				});
+				
+				$(".toggle .toggle-item:eq(0)").trigger('click').addClass('active');
+		   
+		   }
+		   
+		   /* ==========================================================================
+		   When document is ready, do
+		   ========================================================================== */
+		   
+			$(document).ready(function() {			   
+				
+				...
+				
+				handleAccordionsAndToogles();
+				
+				...
+				
+			});
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Contact form -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e7"><span>7.7</span> Contact form</h2>	
+    
+    <p>To make the contact script work you just have to go in the <code>send.php</code> 
+    file located in <code>assets/php/</code> and
+    change in the line below the email adress with your own.</p>
+    
+    <p>The way the email works is that the contact.html file calls through ajax the send.php file ( if the inputs are properly filled out) it is
+     processed and the result is returned to the contact.html page and placed in &lt;div id="formstatus"&gt;&lt;/div&gt;.
+     So you must have it loaded on a server with php enabled to get it to work otherwise it will return the php code.</p>
+
+    <p>If the mail is succesfully sent then the contact form is cleared.</p>
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<form id="contact-form" name="contact-form" method="post" action="assets/php/send.php">  
+			<fieldset>
+				<div id="formstatus"></div>
+				<p>
+					<input class="span12" type="text" id="name" name="name" value="" placeholder="name">
+				</p>
+				<p>
+				   <input class="span12" type="text" id="email" name="email" value="" placeholder="e-mail"> 
+				</p>
+				<p>
+					<input class="span12" type="text" id="subject" name="subject" value="" placeholder="subject">
+				</p>                                        
+				<p>
+					<textarea class="span12" id="message" name="message" rows="7" cols="25" placeholder="message"></textarea>
+				</p>
+				<p class="last">
+					<input class="btn" id="submit" type="submit" name="submit" value="Submit" >
+				</p>
+			</fieldset>
+		</form><!-- end #contact-form -->
+
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Contact form
+		   ========================================================================== */
+		  
+			#contact-form { 
+				overflow: hidden; 
+				margin: 30px 0; 
+			}
+			
+			#contact-form fieldset {}
+			
+			label.validation-error {
+				padding-left: 15px;
+				color: #fc0103; 
+			}
+			
+			input.validation-error,
+			textarea.validation-error,
+			select.validation-error {}
+			
+			#contact-form #formstatus {}
+			
+			#contact-form input[type="text"],
+			#contact-form textarea {
+				padding-left: 40px;
+				margin-bottom: 0;
+				border-bottom: 1px solid #45bbf8;
+				background-color: transparent;
+			}
+			
+			#contact-form textarea { 
+				resize: none;
+				max-height: 180px;
+			}
+			
+			#contact-form input[type="submit"] {
+				display: block;
+				width: 100%;
+				padding: 15px 50px;
+				border-radius: 0;
+				margin-bottom: 0;
+				background-color: #1c1c1c;
+				color: #1c9bdc;
+				font-size: 18px;
+				font-weight: 500;
+				text-transform: uppercase;
+				-webkit-transition: all 0.3s;
+						transition: all 0.3s;
+			}
+			
+			#contact-form input[type="submit"]:hover { 
+				background-color: #7b7b7b;
+				color: #fff;
+			}
+				
+			#footer #contact-form { margin-top: 0; }
+			
+			#footer #contact-form input[type="text"],
+			#footer #contact-form textarea {
+				padding-left: 15px;
+				border-bottom: 1px solid #919191;
+				margin-bottom: 0;
+				background-color: #1c1c1c;
+				color: #7b7b7b;
+			}	
+			
+			/*
+			 * 1. Clearfix hack 
+			 */
+			#contact-form:after { /* 1 */
+				visibility: hidden;
+				display: block;
+				height: 0;
+				font-size: 0;
+				content: " ";
+				clear: both;		
+			}
+
+								
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		/* ==========================================================================
+		   handleContactForm - validate and ajax submit contat form
+		   ========================================================================== */
+		
+			function handleContactForm() {
+			
+				if(typeof $.fn.validate !== 'undefined'){
+					
+					$('#contact-form').validate({
+						errorClass: 'validation-error', // so that it doesn't conflict with the error class of alert boxes
+						rules: {
+							name: {
+								required: true
+							},
+							email: {
+								required: true,
+								email: true
+							},
+							subject: {
+								required: true
+							},
+							message: {
+								required: true
+							}
+						},
+						messages: {
+							name: {
+								required: "Field is required!"
+							},
+							email: {
+								required: "Field is required!",
+								email: "Please enter a valid email address"
+							},
+							subject: {
+								required: "Field is required!"
+							},
+							message: {
+								required: "Field is required!"
+							}
+						},
+						submitHandler: function(form) {
+							var result;
+							$(form).ajaxSubmit({
+								type: "POST",
+								data: $(form).serialize(),
+								url: "assets/php/send.php",
+								success: function(msg) {
+									
+									if (msg === 'OK') {
+										result = '<div class="alert success"><i class="fa fa-check-circle-o"></i>The message has been sent!</div>';
+										$('#contact-form').clearForm();
+									} else {
+										result = '<div class="alert error"><i class="fa fa-times-circle"></i>' + msg + '</div>';
+									}
+									$("#formstatus").html(result);
+				
+								},
+								error: function() {
+				
+									result = '<div class="alert error"><i class="fa fa-times-circle"></i>There was an error sending the message!</div>';
+									$("#formstatus").html(result);
+				
+								}
+							});
+						}
+					});
+					
+				}
+				
+			}
+			
+			/* ==========================================================================
+		   When document is ready, do
+		   ========================================================================== */
+		   
+			$(document).ready(function() {			   
+				
+				...
+						
+				handleContactForm();
+				
+				...
+				
+			});
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Google maps -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e8"><span>7.8</span> Google maps</h2>	
+    
+    <p>gMap is a jQuery plugin that helps you embed Google Maps into your website. With less than 2 KB (minified and gzipped) in size it is very flexible and highly customizable. Read the full <a href="http://labs.mario.ec/jquery-gmap/#docs">gMap 2 documentation</a>.</p>
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div class="map">
+			<div class="google-map" 
+				data-zoom="14" 
+				data-address="Oak Drive Crown Point, NY, USA" 
+				data-caption="Office location"
+				data-maptype="ROADMAP"
+				data-popup="false"
+				data-mapheight="580">
+				<p>This will be replaced with the Google Map.</p>
+			</div><!-- end .google-map -->
+		</div><!-- end .map -->
+
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+			=Google Maps
+			========================================================================== */
+			
+			 .google-map {
+				width: 100%; 
+				height: 400px;
+			}
+			
+			/**
+			 * 1. needed so that Google Maps controls are not distorted
+			 */
+			
+			.google-map img { max-width: none; }	/* 1 */
+			
+			.map {
+				position: relative;
+				margin-bottom: 50px; 
+			}
+			
+			.map-overlay {
+				position: absolute;
+				top: 50%;
+				right: 20%;
+				width: 450px;
+				-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+						transform: translateY(-50%);
+			}
+			
+			@media (max-width: 767px) {
+		
+				.map { padding: 0 20px; }
+				.row .map { padding: 0; }
+				
+				.map-overlay { 
+					position: relative;
+					top: 0;
+					right: 0;
+					width: 100%;
+					-webkit-transform: translateY(0);
+						-ms-transform: translateY(0);
+							transform: translateY(0);
+				}
+				
+			}
+						
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		if(typeof $.fn.gMap !== 'undefined'){
+			
+			$('.google-map').each(function() {
+				
+				var $t = $(this),
+					mapZoom = 15,
+					mapAddress = $t.attr("data-address"),
+					mapCaption = $t.attr("data-caption"),
+					mapType = "ROADMAP",
+					mapHeight = $t.attr("data-mapheight"),
+					popUp = false;
+				
+				if ($t.attr("data-zoom") !== undefined) {
+					mapZoom = parseInt($t.attr("data-zoom"),10);
+				}	
+				
+				if ($t.attr("data-mapHeight") !== undefined) {
+					$t.css( "height", mapHeight+'px');
+				}
+				
+				if ($t.attr("data-maptype") !== undefined) {
+					mapType = $t.attr("data-maptype");
+				} 
+				
+				if ($t.attr("data-popup") !== undefined) {
+					popUp = $t.data("popup");
+				} 
+				
+				$t.gMap({
+					maptype: mapType,
+					scrollwheel: false,
+					zoom: mapZoom,
+					markers: [{
+						address: mapAddress,
+						html: mapCaption,
+						popup: popUp
+					}],
+					controls: {
+						panControl: true,
+						zoomControl: true,
+						mapTypeControl: true,
+						scaleControl: false,
+						streetViewControl: false,
+						overviewMapControl: false
+					}
+				});
+		
+			});
+			
+		}
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Milestones -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e9"><span>7.9</span> Milestones</h2>
+    
+    <ul>
+        <li><code>data-stop</code> - should be a numeric value</li>
+        <li><code>data-speed</code> - should be a numeric value in miliseconds</li>
+    </ul>	
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div class="milestone">
+                            
+			<div class="milestone-content">
+				
+				<span class="milestone-value" data-stop="25" data-speed="2000"></span>
+				
+				<div class="milestone-description">
+					
+					<h6>Members</h6>
+					
+					<p>Vivamus bibendum enim</p>
+					
+				</div><!-- end .milestone-description -->
+				
+			</div><!-- end .milestone-content -->
+		   
+		</div><!-- end .milestone -->
+
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Milestones
+		   ========================================================================== */
+		
+			.milestone {
+				position: relative;
+				margin-bottom: 40px;
+				text-align: center;
+			}
+			
+			/*
+			 * 1. Clearfix hack 
+			 */
+			.milestone:after { /* 1 */
+				visibility: hidden;
+				display: block;
+				height: 0;
+				font-size: 0;
+				content: " ";
+				clear: both;		
+			}
+			
+			.milestone i {
+				z-index: 2;
+				margin-right: 10px;
+				font-size: 32px;
+			}
+			
+			.milestone .milestone-content {
+				z-index: 1;
+				color: #1c9bdc;
+				font-size: 60px;
+				line-height: 60px;
+				font-weight: 700;
+			}
+			
+			.milestone .milestone-description {
+				color: #252525;
+				font-family: "Open Sans", sans-serif;
+				font-size: 14px; 
+				line-height: 21px;
+			}
+			
+			.milestone .milestone-description p {
+				color: #919191;
+				font-weight: 400;
+				font-style: italic;
+			}
+
+				
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		/* ==========================================================================
+		   animateMilestones
+		   ========================================================================== */
+		
+			function animateMilestones() {
+		
+				$('.milestone:in-viewport').each(function() {
+					
+					var $t = $(this),
+						n = $t.find(".milestone-value").attr("data-stop"),
+						r = parseInt($t.find(".milestone-value").attr("data-speed"), 10);
+						
+					if (!$t.hasClass("already-animated")) {
+						$t.addClass("already-animated");
+						$({
+							countNum: $t.find(".milestone-value").text()
+						}).animate({
+							countNum: n
+						}, {
+							duration: r,
+							easing: "linear",
+							step: function() {
+								$t.find(".milestone-value").text(Math.floor(this.countNum));
+							},
+							complete: function() {
+								$t.find(".milestone-value").text(this.countNum);
+							}
+						});
+					}
+					
+				});
+		
+			}
+			
+			/* ==========================================================================
+			   When document is ready, do
+			   ========================================================================== */
+			   
+				$(document).ready(function() {			   
+					
+					...
+					
+					animateMilestones();
+					
+					...
+					
+				});
+			
+			/* ==========================================================================
+			   When the window is scrolled, do
+			   ========================================================================== */
+			   
+				$(window).scroll(function() {				   
+					
+					...
+					
+					animateMilestones();
+					
+					...
+			
+				});
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Pie charts -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e10"><span>7.10</span> Pie charts</h2>
+    
+    <ul>
+        <li><code>data-percent</code> - should be a numeric value in percent</li>
+        <li><code>data-barColor</code> - should be a color or (HEX or RGBA) or 'transparent'</li>
+        <li><code>data-trackColor</code> - should be a color (HEX or RGBA) or 'transparent'</li>
+        <li><code>data-lineWidth</code> - should be a numeric value in px</li>
+        <li><code>data-barSize</code> - should be a numeric value in px</li>
+    </ul>
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div class="pie-chart" data-percent="75" data-barColor="#1c9bdc" data-trackColor="transparent" data-lineWidth="9" data-barSize="240" data-lineCap="round">
+                            
+			<div class="pie-chart-percent">
+				<span></span>
+				<sup>%</sup>
+			</div>
+			
+			<span class="pie-chart-custom-text">Passion</span>
+			
+		</div><!-- end .pie-chart -->
+
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Pie charts
+		   ========================================================================== */
+		
+			.pie-chart {
+				position: relative;
+				padding: 20px;
+				margin: 0 auto 30px;
+				background-color: #fff;
+				text-align: center;
+				box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.17);
+			}
+			
+			.pie-chart canvas {
+				position: absolute;
+				z-index: 1;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%,-50%);
+					-ms-transform: translate(-50%,-50%);
+						transform: translate(-50%,-50%);
+			}
+			
+			.pie-chart i, 
+			.pie-chart .pie-chart-custom-text, 
+			.pie-chart .pie-chart-percent {
+				position: absolute;
+				z-index: 2;
+				top: 50%;
+				left: 50%;
+				display: block;
+				width: 100%;
+				color: #252525;
+				text-align: center;
+				-webkit-transform: translate(-50%,-50%);
+					-ms-transform: translate(-50%,-50%);
+						transform: translate(-50%,-50%);
+			}
+			
+			.pie-chart img {
+				max-width:100%;
+				vertical-align: middle;
+			}
+			
+			.pie-chart .pie-chart-custom-text {
+				margin-top: 20px;
+				font-size: 20px;
+				font-weight: 600;
+			}
+			
+			.pie-chart .pie-chart-percent {
+				margin-top: -15px;
+				font-size: 48px;
+				font-weight: 600;
+			}
+			
+			.pie-chart .pie-chart-percent sup {
+				font-size: 26px;
+				margin-left: -15px;
+			}
+			
+			.pie-chart-description {
+				display: block;
+				font-size: 14px;
+				text-align: center;
+			}
+			
+			@media (min-width: 1200px) {
+				
+				.pie-chart { padding: 40px; }
+				
+			}
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				.pie-chart { padding: 0; }
+				
+			}
+			
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		/* ==========================================================================
+		   setDimensionsPieCharts
+		   ========================================================================== */
+			
+			function setDimensionsPieCharts() {
+
+				$('.pie-chart').each(function() {
+
+					var $t = $(this),
+						n = $t.parent().width(),
+						r = $t.attr("data-barSize");
+					
+					if (n < r) {
+						r = n;
+					}
+					
+					$t.css({
+						"height": r, 
+						"width": r, 
+						"line-height": r + "px"
+					}).find("i").css({
+						"line-height": r + "px",
+						"font-size": r / 3
+					});
+					
+				});
+
+			}
+		
+		/* ==========================================================================
+		   animatePieCharts
+		   ========================================================================== */
+		
+			function animatePieCharts() {
+		
+				if(typeof $.fn.easyPieChart !== 'undefined'){
+		
+					$('.pie-chart:in-viewport').each(function() {
+			
+						var $t = $(this),
+							n = $t.parent().width(),
+							r = $t.attr("data-barSize"),
+							l = "square";
+						
+						if ($t.attr("data-lineCap") !== undefined) {
+							l = $t.attr("data-lineCap");
+						} 
+						
+						if (n < r) {
+							r = n;
+						}
+						
+						$t.easyPieChart({
+							animate: 1300,
+							lineCap: l,
+							lineWidth: $t.attr("data-lineWidth"),
+							size: r,
+							barColor: $t.attr("data-barColor"),
+							trackColor: $t.attr("data-trackColor"),
+							scaleColor: "transparent",
+							onStep: function(from, to, percent) {
+								$(this.el).find('.pie-chart-percent span').text(Math.round(percent));
+							}
+			
+						});
+						
+					});
+					
+				}
+		
+			}
+			
+			/* ==========================================================================
+			   When document is ready, do
+			   ========================================================================== */
+			   
+				$(document).ready(function() {			   
+					
+					...
+					
+					setDimensionsPieCharts();
+					
+					animatePieCharts();
+					
+					...
+					
+				});
+			
+			/* ==========================================================================
+			   When the window is scrolled, do
+			   ========================================================================== */
+			   
+				$(window).scroll(function() {				   
+					
+					...
+					
+					animatePieCharts();
+					
+					...
+					
+			
+				});
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Progress bars -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e11"><span>7.11</span> Progress bars</h2>
+    
+    <p><code>data-width</code> - should be a numeric value in percent</p>
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div class="fixed">
+                            
+			<div class="progress-bar alt">  
+				<span class="progress-bar-outer" data-width="95"> 
+					<span class="progress-bar-inner"></span> 
+				</span>
+			</div><!-- end .progress-bar -->
+			
+			<div class="progress-bar-description">
+				Management
+				<span>95%</span>
+			</div>                                                                       
+			
+		</div>
+
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Progress Bar
+		   ========================================================================== */
+		
+			.progress-bar-description {
+				display: block;
+				margin-bottom: 20px;
+				font-family: "Open Sans", sans-serif;
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: 600;
+			}
+			
+			.progress-bar.alt + .progress-bar-description {
+				font-family: "Hind", sans-serif;
+				font-size: 14px;
+				font-weight: 500;
+			}
+			
+			.progress-bar-description span {
+				float: right;
+			}
+			
+			.progress-bar {
+				position: relative;
+				display: block;
+				height: 12px;
+				margin-bottom: 20px;
+				background-color: #f7f7f7;
+			}
+			
+			.progress-bar.alt { 
+				height: 4px;
+				border-radius: 5px;
+				background-color: #d3d3d3;
+			}
+			
+			.progress-bar .progress-bar-outer {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				background-color: #1c9bdc;
+			}
+			
+			.progress-bar.alt .progress-bar-outer { border-radius: 5px; }
+			
+			.progress-bar .progress-bar-outer .progress-bar-inner {
+				position: absolute;
+				z-index: 1;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.progress-percentage {
+				position: absolute;
+				top: 18px;
+				right: 0;
+				font-family: "Hind", sans-serif;
+				font-size: 14px;
+				font-weight: 500;
+			}
+
+
+						
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		/* ==========================================================================
+		   animateProgressBars
+		   ========================================================================== */
+		
+			function animateProgressBars() {
+		
+				$('.progress-bar .progress-bar-outer:in-viewport').each(function() {
+					
+					var $t = $(this);
+					
+					if (!$t.hasClass("already-animated")) {
+						$t.addClass("already-animated").animate({
+							width: $t.attr("data-width") + "%"
+						}, 2000);
+					}
+					
+				});
+		
+			}
+			
+			/* ==========================================================================
+			   When document is ready, do
+			   ========================================================================== */
+			   
+				$(document).ready(function() {			   
+					
+					...
+					
+					animateProgressBars();
+			
+					...
+					
+				});
+			
+			/* ==========================================================================
+			   When the window is scrolled, do
+			   ========================================================================== */
+			   
+				$(window).scroll(function() {				   
+					
+					...
+
+					animateProgressBars();
+					
+					...
+					
+			
+				});
+
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Tabs -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e12"><span>7.12</span> Tabs</h2>    
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div class="tabs-container">
+                        
+			<ul class="tabs-menu">
+				<li>
+					<a href="#content-tab-1-1">Tab 1</a>
+				</li>
+				<li>
+					<a href="#content-tab-1-2">Tab 2</a>
+				</li>
+				<li>
+					<a href="#content-tab-1-3">Tab 3</a>
+				</li>
+			</ul><!-- end .tabs-menu -->
+			
+			<div class="tabs">
+				
+				<div class="tab-content" id="content-tab-1-1">
+							
+					<p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit. Quisque sagittis neque at varius 
+					pharetra. Maecenas nec efficitur ante.</p>
+					
+					<p>Donec ferment um risus molestie velit sagittis vulputate. Nam id metus sollicitudin, fa ucibus 
+					nisl ac, condimentum nulla. Pellentesque eleifend eros vel ex al iquet ullamcorper. </p>
+				
+				</div><!-- end .tab-content -->
+				
+				<div class="tab-content" id="content-tab-1-2">
+							
+					<p>Phasellus vel lorem odio. Praesent consec tetur nibh vel sapien posuere, eu mollis odio molestie. 
+					Interdum et malesuada fames ac ante ipsum. </p>
+					
+					<p>Proin dignissim eget velit ac mattis. Donec gravida tempus velit vitae efficitur. Duis eu imperdiet 
+					eros, vitae interdum mi. Vestibulum libero purus, bibendum sed euismod nec. </p>
+				
+				</div><!-- end .tab-content -->
+				
+				<div class="tab-content" id="content-tab-1-3">
+							
+					<p>Donec mattis, mi cursus pretium posuere, quam orci mollis odio, non sodales erat leo ut est. Integer 
+					neque nisi, consectetur tempor. </p>
+					
+					<p>Praesent at finibus tellus. Nam in tortor vel mi accumsan venenatis. Cras eleifend tincidunt ipsum 
+					vel placerat. Proin vitae libero sit amet purus imperdiet vestibulum in sit amet lorem. </p>
+				
+				</div><!-- end .tab-content -->
+				
+			</div><!-- end .tabs -->  
+		
+		</div><!-- end .tab-container -->
+		
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Tabs
+		   ========================================================================== */
+		
+		/* =Horizontal tabs
+		   ========================================================================== */
+				
+		   /*
+			*  1. Wraps around a horizontal tab group
+			*/
+		   
+			.tabs-container {} /* 1 */
+		
+			.tabs-container .tabs-menu {
+				margin-bottom: 0;
+				list-style: none; 
+			}
+			
+			.tabs-container .tabs-menu li { display: inline-block; }
+			
+			.tabs-container .tabs-menu li a { 
+				float: left; 
+				display: block;
+				padding: 10px 30px 10px 25px;
+				border-radius: 30px;
+				background-color: #e4edf1;
+				color: #252525;
+				font-family: "Open Sans", sans-serif;
+				font-size: 14px;
+				font-weight: 600;
+				text-decoration: none;
+				-webkit-transition: all 0.3s;
+						transition: all 0.3s;
+			}
+			
+			.tabs-container .tabs-menu li a i {
+				position: relative;
+				top: 3px;
+				margin-right: 10px;
+				font-size: 20px;
+			}
+			
+			.tabs-container .tabs-menu li a:hover { text-decoration: none; }
+			
+			.tabs-container .tabs-menu li a:hover,
+			.tabs-container .tabs-menu li.active a { 
+				background-color: #1c9bdc;
+				color: #fff; 
+			}
+			
+			.tabs-container .tabs { margin-bottom: 30px; }
+			
+			.tabs-container .tab-content { padding: 30px 25px 0 25px; }
+			
+			.tabs-container .tab-content > *:last-child { margin-bottom: 0; }
+			
+			/*
+			 * 1. Clearfix hack 
+			 */
+			.tabs-container .tabs-menu:after { /* 1 */
+				visibility: hidden;
+				display: table;
+				height: 0;
+				font-size: 0;
+				content: " ";
+				clear: both;		
+			}
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				.tabs-container .tabs-menu li a { 
+					padding: 8px 20px 8px 15px;
+					font-size: 12px;
+				}
+				
+				.tabs-container .tabs-menu li a i {
+					top: 0;
+					font-size: 14px; 
+				}
+				
+			}
+			
+			@media (max-width: 767px) {
+			
+				.tabs-container .tabs-menu { border-bottom: none; }
+				
+				.tabs-container .tabs-menu li { display: block; }
+			
+				.tabs-container .tabs-menu li a { 
+					float: none; 
+					display: block;
+					padding: 20px 25px;
+					border: 1px solid #d7d7d7;
+					border-top: none;
+					margin: 0;
+				}
+				
+				.tabs-container .tabs-menu li a:hover { text-decoration: none; }
+				
+				.tabs-container .tabs-menu li:first-child a { border-top: 1px solid #d7d7d7; }
+				
+				.tabs-container .tabs-menu li.active a {  
+					padding: 20px 25px;
+					border-bottom-color: #bbb;
+					margin: 0;
+					background-color: #1c9bdc;
+					color: #fff; 
+				}	
+				
+				.tabs-container .tab-content {
+					padding-right: 0;
+					padding-left: 0;
+				}
+			  
+			}
+				
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		if(typeof $.fn.easytabs !== 'undefined'){
+			
+			$('.tabs-container').easytabs({
+				animationSpeed: 300,
+				updateHash: false
+			});
+		
+		}
+	
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!--  Countdown -->
+<!-- ===================================================================================-->	
+		
+	<h2 id="s7e13"><span>7.13</span> Countdown</h2>    
+
+	<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+                    
+		<div id="countdown"></div>
+		
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* ==========================================================================
+		   =Countdown
+		   ========================================================================== */
+		   
+		   #countdown {
+				margin: 50px 0;
+				text-align: center;
+			}
+			
+			.countdown-section {
+				position: relative;
+				float: left;
+				display: block;
+				width: 25%;
+				padding: 150px 0;
+				background-color: #1c9bdc;
+				color: #fff;
+			}
+			
+			.countdown-section:nth-child(1) { background-color: #1c9bdc; }
+			.countdown-section:nth-child(2) { background-color: #198eca; }
+			.countdown-section:nth-child(3) { background-color: #1482ba; }
+			.countdown-section:nth-child(4) { background-color: #1073a5; }
+			
+			.countdown-section:after {
+				position: absolute;
+				z-index: 1;
+				top: 50%;
+				right: -20px;
+				width: 0; 
+				height: 0; 
+				border-top: 10px solid transparent; 
+				border-bottom: 10px solid transparent;
+				border-left: 20px solid #1c9bdc;
+				content: "";
+				-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+						transform: translateY(-50%);
+			}
+			
+			.countdown-section:nth-child(1):after { border-left-color: #1c9bdc; }
+			.countdown-section:nth-child(2):after { border-left-color: #198eca; }
+			.countdown-section:nth-child(3):after { border-left-color: #1482ba; }
+			.countdown-section:nth-child(4):after { border-left-color: #1073a5; }
+			
+			.services-list li:last-child:after { content: none; }
+			
+			.countdown-amount {
+				display: block;
+				font-size: 72px;
+				line-height: 92px;
+			}
+			
+			.countdown-period { font-size: 24px; }
+			
+			/*
+			 * 1. Clearfix hack 
+			 */
+			#countdown:after { /* 1 */
+				visibility: hidden;
+				display: block;
+				height: 0;
+				font-size: 0;
+				content: " ";
+				clear: both;		
+			}
+			
+			@media (max-width: 767px) {
+				
+				.countdown-section {
+					float: none;
+					width: 100%;
+					padding: 100px 0;
+				}
+				
+				.countdown-section:after { content: none; }
+				
+			}
+				
+	]]></script>
+	
+	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+	
+		if (typeof $.fn.countdown !== 'undefined') {
+		
+			$("#countdown").countdown({ until: new Date(2016, 3-1, 22)}); 
+		
+		}
+	
+	]]></script>
+		
+<!-- ===================================================================================-->
+<!-- 8 WordPress -->
+<!-- ===================================================================================-->
+
+	<h1 id="s8"><span>8</span>WordPress</h1>
+    
+    <p>For an easiest Wordpress converstion, we added widgets, alignments, structure and classes for post and comments.</p>
+
+<!-- ===================================================================================-->
+<!--  Posts and Comments -->
+<!-- ===================================================================================-->	
+	
+	<h2 id="s8e1"><span>8.1</span> Posts and Comments</h2>
+    
+    <p>You can find a preview of it and sample code source in Wordpress > WordPress Post(s), WordPress Comments and WordPress Comment Form</p>
+
+<!-- ===================================================================================-->
+<!--  Default Widgets -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s8e2"><span>8.2</span> Default Widgets</h2>
+    
+    <p>You can find a preview of it and sample code source in Wordpress > WordPress Widgets default</p>
+
+<!-- ===================================================================================-->
+<!-- 8.1 Custom Widgets -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s8e3"><span>8.3</span> Custom Widgets</h2>
+    
+    <p>You can find a preview of it and sample code source in Wordpress > WordPress Custom Widgets</p>
+    
+<!-- ===================================================================================-->
+<!-- 8.3.1 Twitter Feed -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s8e3e1"><span>8.3.1</span> Twitter Feed</h2>
+    
+    <p>You can find a preview of it and sample code source in Wordpress > WordPress Custom Widgets</p>
+    
+    <p>The template uses <a href="http://www.jasonmayes.com/projects/twitterApi/">Twitter Post Fetcher</a> - to display tweets without using the 1.1 twitter API.</p>
+
+    <p>Twitter Post Fetcher Makes use of the over bloated widgets Twitter gives us to put on our sites, cuts out all the nonsense (and non semantic markup), 
+    and returns to you your raw tweet text so you can do with it as you please and style it how you want on your own website.</p>
+
+    <p>How to use it:</p>
+    
+    <ol>
+        <li>Go to www.twitter.com and sign in as normal, go to your settings page.</li>
+        <li>Go to "Widgets" on the left hand side.</li>
+        <li>Create a new widget for what you need eg "user timeline" or "search" etc.</li> 
+        <li>Feel free to check "exclude replies" if you dont want replies in results.</li>
+        <li>Now go back to settings page, and then go back to widgets page, you should</li>
+        <li>see the widget you just created. Click edit.</li>
+        <li>Now look at the URL in your web browser, you will see a long number like this:</li>
+        <li>440384536610734080</li>
+        <li>Use this as your data-account-id!</li>
+    </ol>
+    
+    <script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+        
+		<div class="ewf-tweet-list" data-items="1" data-account-id="440384536610734080"></div>
+		
+    ]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* =EWF Twitter widget
+		   ========================================================================== */
+		
+			.ewf_widget_latest_tweets{}
+	
+			.ewf-tweet-list .tweet { word-wrap: break-word; }
+			
+			.ewf-tweet-list ul { list-style: none; }
+			
+			.ewf-tweet-list .interact { text-align: center; }
+			
+			.ewf-tweet-list .interact a { margin-right: 10px; }
+			
+			.ewf-tweet-list .interact a:last-child { margin-right: 0; }
+				
+	]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+    
+        // twitterFetcher
+        // http://jasonmayes.com/projects/twitterApi/
+        
+        if(typeof twitterFetcher !== 'undefined' && ($('.ewf_widget_latest_tweets').length > 0)) {
+            
+            $('.ewf_widget_latest_tweets').each(function(index){
+            
+                var account_id = $('.ewf-tweet-list', this).attr('data-account-id'),
+                    items = $('.ewf-tweet-list', this).attr('data-items'),
+                    newID = 'ewf-tweet-list-' + index;
+                
+                $('.ewf-tweet-list', this).attr('id', newID);
+                
+                var config = {
+                  "id": account_id,
+                  "domId": newID,
+                  "maxTweets": items,
+                  "showImages": false,
+                  "showInteraction": false,
+                  "showUser": false
+                };
+                
+                twitterFetcher.fetch(config);
+            });
+            
+        }
+    
+    ]]></script>
+    
+<!-- ===================================================================================-->
+<!-- 8.3.2 Flickr Feed -->
+<!-- ===================================================================================-->	
+
+	<h2 id="s8e3e2"><span>8.3.2</span> Flickr Feed</h2>
+    
+    <p>Flickr photos are added through a flickr badge. You can generate one on the flickr website
+	or just change the photo set used by the current one.</p>
+    
+    <script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+        
+		<script src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user_set&amp;set=72157650949161397">
+		
+    ]]></script>
+    
+    <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+		
+		/* =EWF Flickr widget
+		   ========================================================================== */
+			
+			.ewf_widget_flickr {}
+	
+			.flickr-feed {}
+			
+			.flickr-feed .flickr_badge_image { display: inline; }
+			
+			.flickr-feed img { 
+				width: 80px; 
+				height: auto;
+				padding: 0 3px 3px 0; 
+				border: none;
+			}
+			
+			@media (min-width: 768px) and (max-width: 991px) {
+				
+				.flickr-feed img { width: 75px; }
+				
+			}
+				
+	]]></script>
+    
+<!-- ===================================================================================-->
+<!-- 9  Color Schemes -->
+<!-- ===================================================================================-->
+
+	<h1 id="s9"><span>9</span>Color Schemes</h1>
+	
+		<p>To make it easier to skin the template we included skin css files with the templates. These files contain all the css 
+        rules related strictly to colors and background colors and images. They can be found in the <code>/_layout/css/skins</code> folder. </p>
+
+		<p>The Template template has a default skin - <code>default.css</code>. To create new ones just rename this file and change color values in it and 
+        then link to it in the html pages just under the Template CSS stylesheets. It also comes with 1 other predefined color schemes:</p>
+
+		<script type="syntaxhighlighter" class="brush: php; html-script: true"><![CDATA[
+		    <!-- /// Template Skin CSS ////////  -->
+			<!-- <link rel="stylesheet" href="assets/css/skins/default.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/skins/purple.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/skins/green.css"> -->
+			<!-- <link rel="stylesheet" href="assets/css/skins/orange.css"> -->
+		]]></script>
+
+<!-- ===================================================================================-->
+<!-- 10 Tips & Tricks -->
+<!-- ===================================================================================-->
+
+	<h1 id="s10"><span>10</span>Tips &amp; Tricks </h1>
+
+<!-- ===================================================================================-->
+<!-- 10.1 Tutorials -->
+<!-- ===================================================================================-->
+
+	<h2 id="s10e1"><span>10.1</span>Tutorials </h2>
+	
+	<p>In order to understand the html and css in the template you must be familiar with the following concepts:</p>
+	
+	<ol>
+		<li><a href="http://webdesign.about.com/od/css/qt/tipcssmulticlas.htm">Applying multiple CSS classes to a element</a></li>
+		<li><a href="http://www.htmlgoodies.com/html5/tutorials/an-introduction-to-css3-media-queries.html#fbid=kzFYw0CpOUZ">CSS Media Querys</a></li>
+		<li><a href="http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/">CSS Advanced Selectors</a></li>
+		<li><a href="http://css-tricks.com/almanac/properties/a/animation/">CSS3 Animation and Transitions</a></li>
+		<li><a href="http://html5doctor.com/html5-custom-data-attributes/">Html5 Data Attributes</a></li>
+	</ol>
+
+<!-- ===================================================================================-->
+<!-- 10.2 Using Firebug -->
+<!-- ===================================================================================-->
+
+	<h2 id="s10e2"><span>10.2</span>Using Firebug </h2>
+	
+	<p>Firebug integrates with Firefox to put a wealth of web development tools at your
+	 fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and 
+	 JavaScript live in any web page.</p>
+	 
+	<p>If you are using Firefox, Firebug should prove to be a great asset while editing the template,
+	as you could use if to select elements on the page, find out what css they use and do changes on the fly 
+	to see how they would look. Also you could use the console to see eventual errors.</p>
+	
+	<p>For more info on Firebug and it's usage visit <a href="https://getfirebug.com/">https://getfirebug.com/</a>.</p> 
+
+<!-- ===================================================================================-->
+<!-- 10.3 Html & Css validation -->
+<!-- ===================================================================================-->
+
+	<h2 id="s10e3"><span>10.3</span>Html &amp; Css validation </h2>
+	
+	<p>Often problems with the templates are due to coding errors made while edting them. So I highly recommend you
+	run your html files through the <a href="http://validator.w3.org/">W3C Markup Validation Service</a>
+	and your CSS files through the <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a> once you are done editing them.</p>
+
+<!-- ===================================================================================-->
+<!-- 10.4 Page speed optimisation -->
+<!-- ===================================================================================-->
+
+	<h2 id="s10e4"><span>10.4</span>Page speed optimisation </h2>
+	
+	<p>The tool I use for page speed optimisation is Google's <a href="https://developers.google.com/speed/pagespeed/insights/">Page Speed Insights</a>.</p>
+	<p>Run your website through it and it will pinpoint problems and suggest fixes.</p>
+	<p>If you need to compress images try the Windows and Mac OS application <a href="http://pnggauntlet.com/">PNG Gauntlet</a>.</p>
+
+<!-- ===================================================================================-->
+<!-- 10.5 Seo optimisation -->
+<!-- ===================================================================================-->
+
+	<h2 id="s10e5"><span>10.5</span>Seo optimisation </h2>
+	
+	<p>If you need help with Search Engine Optimization I recommend you:</p>
+
+	<ol>
+		<li>Read <a href="http://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf">Google's Seo Recomandations</a></li>
+		<li>After your website is online use a free service like <a href="http://seositecheckup.com/">http://seositecheckup.com/</a> to discover any other seo issues</li>
+	</ol>
+
+<!-- ===================================================================================-->
+<!-- 11 Credits -->
+<!-- ===================================================================================-->
+
+	<h1 id="s11"><span>11</span>Credits</h1>
+        
+	<p>The list of credits can be found in the Licenses folder.</p>
+
+</div><!-- end #doc-content -->
+
+<script src='assets/jquery.min.js'></script>
+
+<script src="assets/scrollspy.js"></script>	
+
+<script src='assets/jquery.scrollTo.min.js'></script>
+
+<script src='assets/jquery.localscroll-1.2.7-min.js'></script>
+
+<script src="assets/magnificpopup/jquery.magnific-popup.min.js"></script>
+
+<script src="assets/syntaxhighlighter/scripts/shCore.js"></script>
+<script src="assets/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script src="assets/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script src="assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+<script src="assets/syntaxhighlighter/scripts/shBrushXml.js"></script>
+
+<script type='text/javascript' src='assets/custom.js'></script>
+
+</body>
+</html>

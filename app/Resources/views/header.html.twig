@@ -1,0 +1,88 @@
+<div id="header-wrap">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span9">
+
+                <div id="header">
+
+                    <!-- /// HEADER  //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                    <div class="row">
+                        <div class="span3">
+
+                            <!-- // Logo // -->
+                            <div id="logo">
+                                <a href="index.html">
+                                    <img src="{{ asset('images/logo.png') }}" height="230" alt="website logo">
+                                </a>
+                            </div>
+
+                        </div><!-- end .span3 -->
+                        <div class="span9">
+
+                            <!-- // Mobile menu trigger // -->
+
+                            <a href="#" id="mobile-menu-trigger">
+                                <i class="fa fa-bars"></i>
+                            </a>
+
+                            <!-- // Menu // -->
+
+                            {% include 'menu.html.twig' %}
+
+                        </div><!-- end .span8 -->
+                    </div><!-- end .row -->		
+
+                    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                </div><!-- end #header -->
+
+            </div><!-- end .span9 -->
+            <div class="span1">
+
+                <!-- // Custom search // -->                                        
+
+                <div id="custom-search-form-container">
+
+                    <form action="#" id="custom-search-form" method="get">
+                        <input type="text" value="" name="s" id="s" placeholder="Type and press enter to search...">
+                        <input type="submit" id="custom-search-submit" value="">
+                    </form>
+
+                </div><!-- end #custom-search-form-container -->
+
+                <a id="custom-search-button" href="#">Devis</a>
+
+            </div><!-- end .span1 -->
+            <div class="span2" id="header-widget-area">
+
+                <div class="widget ewf_widget_social_media">
+
+                    <div class="fixed">
+
+                        <a href="#" class="googleplus-icon social-icon">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+
+                        <a href="#" class="pinterest-icon social-icon">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+
+                        <a href="#" class="facebook-icon social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="twitter-icon social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div><!-- end .ewf_widget_social_media -->
+
+            </div><!-- end .span2 -->
+        </div><!-- end .row -->
+    </div><!-- end .container-fluid -->
+
+</div><!-- end #header-wrap -->

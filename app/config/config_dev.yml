@@ -1,0 +1,46 @@
+imports:
+    - { resource: config.yml }
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+monolog:
+    handlers:
+        main:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+            channels: [!event]
+        console:
+            type:   console
+            bubble: false
+            channels: [!event, !doctrine]
+        # uncomment to get logging in your browser
+        # you may have to allow bigger header sizes in your Web server configuration
+        #firephp:
+        #    type:   firephp
+        #    level:  info
+        #chromephp:
+        #    type:   chromephp
+        #    level:  info
+
+#swiftmailer:
+#    delivery_address: me@example.com
+
+twig:
+    globals:
+        site_menu:
+            #- [ id, titre, lien, parent, has_child]
+            - [ 1, "Accueil", "homepage", 0, 0]
+            - [ 2, "Apropos de nous", "apropos", 0, 0]
+            - [ 3, "Nos services", "services", 0, 1]
+            - [ 4, "Graphisme", "services", 3, 0]
+            - [ 5, "Web", "services", 3, 0]
+            - [ 6, "Portofolio", "portofolio", 0, 0]
